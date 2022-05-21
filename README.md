@@ -1,3 +1,4 @@
+![CODE!](https://beforesandafters.com/wp-content/uploads/2019/03/Matrix_code.jpg)
 <h1 align="center">Hi 👋, I'm Terence Lewis</h1>
 <h3 align="center">A passionate frontend developer from London, England</h3>
 
