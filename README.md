@@ -1,4 +1,4 @@
-![My Art!](assets/images/my-pic.jpg)
+![Code pic!](https://media.wired.com/photos/5ca648a330f00e47fd82ae77/16:9/w_1391,h_782,c_limit/Culture_Matrix_Code_corridor.jpg)
 <h1 align="center">Hi 👋, I'm Terence Lewis</h1>
 <h3 align="center">A passionate fullstack web developer from London, England</h3>
 
