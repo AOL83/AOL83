@@ -6,7 +6,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=aol83" alt="aol83" /></a> </p>
 
-- 🔭 I’m currently working on [Portfolio project (one)](https://aol83.github.io/Remember-Me-By-Trade/)
+- 🔭 I’m currently working on [Portfolio project Two (Rock paper scissors lizards spock)](https://aol83.github.io/)
 
 - 🌱 I’m currently learning **Full stack wed development**
 
