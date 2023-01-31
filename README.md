@@ -1,4 +1,4 @@
-![Code pic!](https://i.pinimg.com/originals/8d/67/72/8d6772909acb4e377a27d1bdc840c7de.jpg)
+![Code pic!](https://moewalls.com/wp-content/uploads/2022/11/david-in-the-moon-cyberpunk-edgerunners-thumb.jpg)
 <h1 align="center">Hi 👋, I'm Terence Lewis</h1>
 <h3 align="center">A passionate fullstack web developer from London, England</h3>
 
