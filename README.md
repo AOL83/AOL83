@@ -1,8 +1,14 @@
-<h1 align="center">👋 Hi, I’m Terence Lewis</h1>
+<!-- HERO IMAGE PLACEHOLDER -->
+<!-- Replace the URL below with your own banner image when ready -->
+<p align="center">
+  <img src="https://via.placeholder.com/1200x400.png?text=Founder+%7C+Systems+Builder+%7C+Full-Stack+Engineer" alt="Founder Banner" />
+</p>
 
-<h3 align="center">
-Founder • Full-Stack Engineer • Systems Builder
-</h3>
+<h1 align="center">Terence Lewis</h1>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=00FF99&center=true&vCenter=true&width=700&lines=Founder+%7C+Full-Stack+Engineer;Systems+Builder+%26+Product+Owner;Building+Real-World+Software+Platforms;Remote+%7C+International" />
+</p>
 
 <p align="center">
 London, England • Remote / International
@@ -10,71 +16,86 @@ London, England • Remote / International
 
 ---
 
-## 🚀 About Me
+## 🧠 Personal Brand
 
-I’m a **full-stack software engineer and founder** building production-grade applications, platforms, and systems from the ground up.
+**I build complete software systems — not demos, not tutorials, not theory.**
 
-I design and develop **end-to-end software** — from frontend user experience to backend logic, databases, APIs, and infrastructure. My work focuses on **real-world systems**, not tutorials.
+Founder-level full-stack engineer designing and shipping **real, operational platforms** end-to-end: frontend, backend, databases, APIs, admin systems, and automation.
 
-I currently operate **my own LTD technology company**, delivering:
-- Web applications  
-- Full software systems  
-- Internal tooling & automation  
-- Scalable platforms  
-
-I also operate a **UAB company** focused on **land ownership and cabin-stay infrastructure**, where I personally design and build **every system** — booking, admin, access, automation, and operational tooling.
+I own the systems I build. I understand the business they serve. I design for scale, clarity, and real-world use.
 
 ---
 
-## 🧠 What I Specialise In
+## 🚀 What I Do
 
-- Full-stack application development (frontend → backend → database)
-- System architecture & real-world workflows
-- Client & admin dashboards
-- API design & integration
-- Automation & internal tools
-- Secure authentication & role-based systems
-- Remote-first, production-ready software
+- Architect and build **full-stack applications**
+- Design **customer + owner/admin systems**
+- Develop **APIs, databases, and automation**
+- Build **production-ready platforms**
+- Operate **remote-first, system-driven workflows**
+
+I currently run:
+- **An LTD technology company** building apps, websites, and custom software  
+- **A UAB company** holding land for private cabin stays, where I design and operate **all technical systems** end-to-end
 
 ---
 
-## 🧩 Key Projects
+## 🏗 Flagship Platforms
 
-### 🏕 CabinApp Platform
-A real production system for private cabin stays:
-- Customer booking experience
-- Owner/admin control panel
-- Automated workflows
-- Backend APIs & database logic
-- Designed as a scalable business platform
+### 🏕 CabinApp — Private Cabin Stay Platform
+A production system designed for real hospitality operations.
+
+**Includes:**
+- Customer booking experience  
+- Owner/admin dashboard  
+- Backend APIs & database logic  
+- Automation & internal tooling  
+- Built to scale as a business, not a prototype  
+
+---
 
 ### 🕸 Harness Meshnet Software
 Custom software focused on:
-- Distributed system thinking
-- Secure data flow
-- Modular architecture
-- Practical real-world use cases
+- Distributed systems thinking  
+- Secure data flow  
+- Modular architecture  
+- Real-world system design principles  
+
+---
+
+## 📌 Pinned Repository Descriptions (Use These)
+
+**CabinApp**  
+> Full-stack platform for private cabin stays — customer booking, admin systems, APIs, and automation. Built as a real business system.
+
+**Harness Meshnet**  
+> Experimental mesh-style software focused on secure data flow, modular architecture, and distributed system concepts.
+
+**RPSLS (Rock-Paper-Scissors-Lizard-Spock)**  
+> Logic-driven JavaScript project demonstrating clean state handling, user interaction, and scalable frontend structure.
+
+**Portfolio / Utilities Repo**  
+> A collection of tools, experiments, and production-ready components used across real projects.
 
 ---
 
 ## 🎓 Qualifications & Training
 
-- **City & Guilds – Level 3 Certificate in ICT Systems and Principles**
-- **Code Institute – 5 Day Coding Challenge**
+- **City & Guilds – Level 3 Certificate in ICT Systems & Principles**  
+- **Code Institute – 5 Day Coding Challenge**  
 - Continuous self-directed training in:
-  - JavaScript / TypeScript
-  - React / Next.js
-  - Backend systems
-  - Databases & APIs
+  - Full-stack development
+  - System architecture
+  - APIs & databases
+  - Production workflows
 
 ---
 
 ## 🛠 Tech Stack
 
-**Languages & Runtime**
+**Languages**
 - JavaScript (ES6+)
 - TypeScript
-- Node.js
 
 **Frontend**
 - React
@@ -82,34 +103,53 @@ Custom software focused on:
 - HTML5 / CSS3
 
 **Backend & Data**
+- Node.js
 - REST APIs
 - SQLite / relational databases
 - Prisma
-- Auth systems
+- Authentication systems
 
-**Tools & Workflow**
+**Workflow**
 - Git & GitHub
-- Remote development
-- System-first architecture
+- Remote-first development
+- System-driven architecture
 
 ---
 
 ## 🌍 Working Style
 
-- Founder mindset
-- Remote-first
-- Systems over shortcuts
-- Clean, maintainable code
-- Build once, scale properly
+- Founder mindset  
+- Remote & asynchronous  
+- Systems over shortcuts  
+- Clean, maintainable code  
+- Build once, operate long-term  
 
 ---
 
-## 📫 Connect
+## 📊 GitHub Activity
 
-- 📍 London, UK
-- 💼 Remote / International
-- 🔗 GitHub: https://github.com/AOL83
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=AOL83&show_icons=true&theme=dark" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AOL83&layout=compact&theme=dark" />
+</p>
 
 ---
 
-> I don’t just write code — I build systems that work in the real world.
+## 🔗 Narrative Alignment (GitHub • CV • LinkedIn)
+
+This profile reflects the same story across all platforms:
+
+- **Builder, not learner**
+- **Owner, not contractor**
+- **Systems, not snippets**
+- **Real platforms, real responsibility**
+
+If you’ve read this far, you already understand how I work.
+
+---
+
+> I don’t just write code.  
+> I build systems that operate in the real world.
