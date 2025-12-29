@@ -2,7 +2,7 @@
 <!-- HERO / BANNER PLACEHOLDER -->
 <!-- ========================= -->
 <p align="center">
-  <img src="https://via.placeholder.com/1200x400.png?text=Founder+%7C+Systems+Builder+%7C+Full-Stack+Engineer" alt="Founder Banner" />
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTJhcThzMWFsZGw4M3RmZHVpa2tzYjB3NTVzbGFidDdwMW9qaHZuMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9sEmlm8kV4PSM/giphy.gif" />
 </p>
 
 <h1 align="center">Terence Lewis</h1>
