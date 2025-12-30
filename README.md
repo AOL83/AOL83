@@ -2,7 +2,7 @@
 <!-- HERO / BANNER PLACEHOLDER -->
 <!-- ========================= -->
 <p align="center">
-  <img src="https://i.pinimg.com/originals/66/b3/78/66b37807e60a8e89bff093ae8c1a4b6e.gif"/>
+  <img src="https://pixellogo.com/cdn/shop/products/Social-Logo-animation-B_large.gif?v=1574507171"/>
 </p>
 
 <h1 align="center">Terence Lewis</h1>
