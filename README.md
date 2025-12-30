@@ -2,7 +2,7 @@
 <!-- HERO / BANNER PLACEHOLDER -->
 <!-- ========================= -->
 <p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXdheDNya3Z6aXJ2ajg3eHFoejhoM21kOXV1ZWU4MnJ6bzFtdmpkYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/woHe4Zh7BvWb4p5kAi/giphy.gif"/>
+  <img src="https://i.pinimg.com/originals/68/d0/6f/68d06fe64d2d3b57d73f919b90583e28.gif"/>
 </p>
 
 <h1 align="center">Terence Lewis</h1>
