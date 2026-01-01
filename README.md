@@ -14,7 +14,7 @@
 <!-- HERO / BANNER PLACEHOLDER -->
 <!-- ========================= -->
 <p align="center">
-  <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyd3o5ejMyeGx5N2o1MHJtY2JpYzNmaGJvaWFja2FnOTRic2ZhOGJwNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/phwcO1vmJhqTrwKp2h/200w.gif"/>
+  <img src="https://www.zartis.com/wp-content/uploads/2024/10/ai-agents.gif"/>
 </p>
 
 <h1 align="center">Terence Lewis</h1>
