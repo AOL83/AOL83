@@ -1,4 +1,9 @@
 <p align="center">
+  🌍 <strong>Kalba / Language:</strong>
+  <a href="README.md">English</a> |
+  <a href="README.lt.md">Lietuvių</a>
+</p>
+<p align="center">
   <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyd3o5ejMyeGx5N2o1MHJtY2JpYzNmaGJvaWFja2FnOTRic2ZhOGJwNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/phwcO1vmJhqTrwKp2h/200w.gif"/>
 </p>
 
