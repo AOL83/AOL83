@@ -1,8 +1,15 @@
 <p align="center">
-  🌍 <strong>Kalba / Language:</strong>
+  🌍 <strong>Language:</strong>
   <a href="README.md">English</a> |
   <a href="README.lt.md">Lietuvių</a>
 </p>
+
+<p align="center">
+  <sub><strong>Founder-level full-stack</strong> • Systems over shortcuts • Production over theory</sub>
+</p>
+
+<br/>
+
 <!-- ========================= -->
 <!-- HERO / BANNER PLACEHOLDER -->
 <!-- ========================= -->
@@ -13,40 +20,42 @@
 <h1 align="center">Terence Lewis</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=00FF99&center=true&vCenter=true&width=800&lines=Founder+%7C+Full-Stack+Engineer;Systems+Builder+%26+Product+Owner;Building+Production-Ready+Platforms;Remote+%7C+International" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=00FF99&center=true&vCenter=true&width=900&lines=Founder+%7C+Full-Stack+Engineer;Systems+Builder+%26+Product+Owner;Building+Production-Ready+Platforms;Remote+%7C+International" />
 </p>
 
 <p align="center">
-📍 London, England • Remote / International
+📍 <strong>London, England</strong> • Remote / International
 </p>
 
----
+<hr/>
 
-## 🧠 Personal Brand
+## 🧠 Personal Profile
 
 I build **complete software systems** — not demos, not tutorials, not experiments.
 
-Founder-level full-stack engineer designing and operating **real-world platforms** end-to-end:
+Founder-level full-stack engineer designing, building, and operating **real-world platforms** end-to-end:
 frontend, backend, APIs, databases, admin systems, automation, and infrastructure.
 
-I don’t just write code.  
-I **own the systems I build**.
+> I don’t just write code — I **own the systems I build**.
 
----
+<hr/>
 
 ## 🏗 What I Do
 
 - Architect and build **full-stack applications**
-- Design **customer + owner/admin systems**
+- Design **customer and owner/admin systems**
 - Build **scalable APIs & databases**
 - Create **automation and internal tooling**
 - Operate **remote-first, production systems**
 
-I currently run:
+<hr/>
+
+## 🏢 What I Currently Run
+
 - **An LTD technology company** building apps, websites, and custom software
 - **A UAB company** holding land for private cabin stays, where I design and operate **all systems front-to-back**
 
----
+<hr/>
 
 ## 🚀 Flagship Platforms
 
@@ -58,34 +67,32 @@ A real, operational hospitality system.
 - Owner/admin dashboard  
 - Backend APIs & database logic  
 - Automation & internal tools  
-- Built to scale as a business, not a prototype  
-
----
+- Built as a **business system**, not a prototype  
 
 ### 🕸 Harness Meshnet Software
 Custom software focused on:
 - Secure data flow
 - Modular architecture
 - Distributed system concepts
-- Real-world system design
+- Practical system design
 
----
+<hr/>
 
 ## 📌 Pinned Repository Descriptions
 
 **CabinApp**  
-> Full-stack platform for private cabin stays — customer booking, admin systems, APIs, and automation. Built as a real business system.
+> Full-stack platform for private cabin stays — booking, admin systems, APIs, automation.
 
 **Harness Meshnet**  
-> Experimental mesh-style software focused on secure data flow, modular architecture, and distributed systems.
+> Experimental mesh-style software focused on secure data flow and modular system architecture.
 
 **RPSLS (Rock-Paper-Scissors-Lizard-Spock)**  
 > Logic-driven JavaScript project showcasing clean state management and scalable frontend structure.
 
 **Utilities / Portfolio**  
-> A collection of production-ready tools, experiments, and reusable components used across real projects.
+> Production-ready tools, experiments, and reusable components used across real projects.
 
----
+<hr/>
 
 ## 🎓 Qualifications
 
@@ -97,29 +104,19 @@ Custom software focused on:
   - APIs & databases
   - Production workflows
 
----
+<hr/>
 
 ## 🌐 Connect With Me
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linkedin" />
-  </a>
-  <a href="https://www.instagram.com/YOUR_INSTAGRAM" target="_blank">
-    <img src="https://skillicons.dev/icons?i=instagram" />
-  </a>
-  <a href="https://twitter.com/YOUR_X" target="_blank">
-    <img src="https://skillicons.dev/icons?i=twitter" />
-  </a>
-  <a href="mailto:terencelewis610@gmail.com">
-    <img src="https://skillicons.dev/icons?i=gmail" />
-  </a>
-  <a href="https://github.com/AOL83" target="_blank">
-    <img src="https://skillicons.dev/icons?i=github" />
-  </a>
+  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
+  <a href="https://www.instagram.com/YOUR_INSTAGRAM" target="_blank"><img src="https://skillicons.dev/icons?i=instagram" /></a>
+  <a href="https://twitter.com/YOUR_X" target="_blank"><img src="https://skillicons.dev/icons?i=twitter" /></a>
+  <a href="mailto:terencelewis610@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" /></a>
+  <a href="https://github.com/AOL83" target="_blank"><img src="https://skillicons.dev/icons?i=github" /></a>
 </p>
 
----
+<hr/>
 
 ## 🛠 Languages & Tools
 
@@ -127,7 +124,7 @@ Custom software focused on:
   <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,nodejs,express,prisma,sqlite,git,github,linux,figma,vscode" />
 </p>
 
----
+<hr/>
 
 ## 📊 GitHub Stats
 
@@ -139,7 +136,7 @@ Custom software focused on:
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AOL83&layout=compact&theme=dark&hide_border=true" />
 </p>
 
----
+<hr/>
 
 ## 🌍 Working Style
 
@@ -149,7 +146,7 @@ Custom software focused on:
 - Clean, maintainable code
 - Build once, operate long-term
 
----
+<hr/>
 
 ## 🔗 Unified Narrative
 
@@ -159,10 +156,6 @@ This GitHub profile aligns with my **CV and LinkedIn**:
 - Owner, not contractor  
 - Systems, not snippets  
 - Production over theory  
-
-If you understand systems, you already understand how I work.
-
----
 
 > I don’t apply for roles.  
 > I build platforms people rely on.
