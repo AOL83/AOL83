@@ -1,3 +1,8 @@
+<p align="center">
+  🌍 <strong>Kalba / Language:</strong>
+  <a href="README.md">English</a> |
+  <a href="README.lt.md">Lietuvių</a>
+</p>
 <!-- ========================= -->
 <!-- HERO / BANNER PLACEHOLDER -->
 <!-- ========================= -->
