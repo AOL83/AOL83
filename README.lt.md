@@ -11,7 +11,7 @@
 <br/>
 
 <p align="center">
-  <img src="https://i.redd.it/lithuanian-vytis-by-chatgpt-dall-e3-and-at-the-end-how-it-v0-t4oyf0qy777c1.png?width=1024&format=png&auto=webp&s=adea4af16b988a1965e9f2a36e05ce2cdc55091b"/>
+  <img src="https://i.pinimg.com/originals/95/36/a6/9536a67a3ccf108635cea2fc9bb4c62e.gif"/>
 </p>
 
 <h1 align="center">Terence Lewis</h1>
