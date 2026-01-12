@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <sub><strong>Founder lygio full-stack</strong> • Sistemos > trumpi sprendimai • Produkcija > teorija</sub>
+  <sub><strong>Saugumui orientuotas sistemų inžinierius</strong> • Klaidų suvokimas • Produkcija > teorija • Tęstinumas > patogumas</sub>
 </p>
 
 <br/>
@@ -17,7 +17,7 @@
 <h1 align="center">Terence Lewis</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=00FF99&center=true&vCenter=true&width=900&lines=Founder+%7C+Full-Stack+Engineer;Systems+Builder+%26+Product+Owner;Ikurejas+%7C+Full-Stack+Inzinierius;Sistemu+kurejas+%26+Produkto+savininkas;Building+Production-Ready+Platforms;Kuriu+produkcinio+lygmens+platformas;Remote+%7C+International;Nuotoliniu+budu+%7C+Tarptautinis" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=00FF99&center=true&vCenter=true&width=900&lines=Safety-First+Systems+Engineer;Robotics+%26+Autonomous+Systems;Serious+Full-Stack+Platforms;Failure-Aware+Architecture;Nuotoliniu+budu+%7C+Tarptautinis" />
 </p>
 
 <p align="center">
@@ -28,22 +28,22 @@
 
 ## 🧠 Asmeninis profilis
 
-Kuriu **pilnas programinės įrangos sistemas** — ne demonstracinius projektus, ne pamokas ir ne eksperimentus.
+Projektuoju ir kuriu **saugumui orientuotas, klaidas numatančias sistemas** — ne demonstracinius projektus, ne pamokas ir ne trumpalaikius prototipus.
 
-Esu **founder lygio full-stack inžinierius**, projektuojantis, kuriantis ir eksploatuojantis **realius, veikiančius produktus** nuo idėjos iki produkcijos:
-frontend, backend, API, duomenų bazės, administravimo sistemos, automatizacija ir infrastruktūra.
+Mano darbas skirtas **realaus pasaulio platformoms**, kur nutrūksta ryšys, atsiranda daliniai gedimai, pasenę duomenys ir žmogiškos klaidos — ir tai yra **numatyta**, o ne ignoruojama.
 
-> Aš ne tik rašau kodą — aš **atsakau už sistemą**, kurią sukuriu.
+Aš ne tik padarau, kad sistema veiktų.  
+Aš projektuojų, kaip ji **sugenda**, **atsistato** ir lieka **stebima bei valdoma**.
 
 <hr/>
 
-## 🧩 Ką darau
+## 🏗 Ką darau
 
-- Projektuoju ir kuriu **full-stack aplikacijas**
-- Kuriu **klientų ir administravimo sistemas**
-- Projektuoju **mastelį palaikančius API ir duomenų bazes**
-- Diegiu **automatizaciją ir vidinius įrankius**
-- Eksploatuoju **nuotolines, produkcines sistemas**
+- Projektuoju **klaidoms atsparias, saugias sistemas**
+- Kuriu **valdymo sluoksnius, autoriteto modelius ir saugumo ribas**
+- Kuriu **full-stack platformas realioms sąlygoms**
+- Diegiu **stebimas, derinamas ir atkartojamas sistemas**
+- Projektuoju **tęstinumui, o ne idealioms sąlygoms**
 
 <hr/>
 
@@ -56,7 +56,7 @@ frontend, backend, API, duomenų bazės, administravimo sistemos, automatizacija
 
 ## 🚀 Pagrindinės platformos
 
-### 🏕 CabinApp — privačių kabinų rezervavimo platforma
+### 🏕 CabinApp — privačių kabinų platforma
 Reali, veikianti svetingumo sistema.
 
 **Kas viduje:**
@@ -66,28 +66,40 @@ Reali, veikianti svetingumo sistema.
 - Automatizacija ir vidiniai įrankiai  
 - Sukurta kaip **verslo sistema**, ne prototipas  
 
-### 🕸 Harness Meshnet
-Programinė įranga, orientuota į:
-- Saugų duomenų srautą
-- Modulinę architektūrą
-- Paskirstytas sistemas
-- Praktinį sistemų projektavimą
+---
+
+### 🕸 Harness — saugumui orientuota valdymo ir mesh tinklų platforma
+
+Modulinė valdymo sistema, sukurta remiantis **gedimų modeliais, autoriteto atskyrimu ir tęstinumo principu**.
+
+**Pagrindinės sritys:**
+- Formalios būsenų mašinos (SAFE_IDLE, ARMED, ESTOP)
+- Komandų senėjimas, širdies dūžiai, watchdog’ai
+- Autoriteto arbitražas (žmogus vs autonomija)
+- Kill-path’ai ir saugios būsenos degradacija
+- Mesh tipo relinių tinklų koncepcijos
+- Daugiakanalė komunikacija (WiFi, Bluetooth, RF tipo ryšiai)
+- „Dead-stop“ situacijų eliminavimas
+- Atkuriami komandų srautai ir post-mortem analizė
+
+Tai nėra žaislinis projektas.  
+Tai **sistemų inžinerijos darbas**, skirtas elgsenai, kai viskas eina ne pagal planą.
 
 <hr/>
 
 ## 📌 Prisegtų repozitorijų aprašymai
 
 **CabinApp**  
-> Full-stack platforma privačioms kabinoms — rezervavimas, administravimas, API, automatizacija.
+> Full-stack svetingumo platforma — rezervavimas, administravimas, API, automatizacija, realios operacijos.
 
-**Harness Meshnet**  
-> Eksperimentinė mesh tipo programinė įranga: saugus duomenų srautas ir modulinės sistemos.
+**Harness**  
+> Saugumui orientuota valdymo ir mesh tinklų platforma: gedimų modeliai, autoritetas, tęstinumas.
 
 **RPSLS**  
 > JavaScript projektas: švari logika, būsenos valdymas, plečiama struktūra.
 
 **Utilities / Portfolio**  
-> Produkciniai įrankiai ir komponentai realiems projektams.
+> Produkciniai įrankiai, eksperimentai ir komponentai realiems projektams.
 
 <hr/>
 
@@ -96,8 +108,9 @@ Programinė įranga, orientuota į:
 - **City & Guilds – ICT Systems & Principles (3 lygis)**
 - **Code Institute – 5 dienų programavimo iššūkis**
 - Nuolatinis savarankiškas tobulėjimas:
-  - Full-stack kūrimas
-  - Architektūra
+  - Sistemų architektūra
+  - Valdymo ir saugumo modeliai
+  - Full-stack platformos
   - API ir DB
   - Produkciniai procesai
 
@@ -137,11 +150,12 @@ Programinė įranga, orientuota į:
 
 ## 🌍 Darbo stilius
 
-- Founder mąstysena
-- Nuotolinis ir asinchroninis darbas
+- Saugumas pirmoje vietoje
+- Klaidų suvokimas ir modeliavimas
 - Sistemos vietoje trumpų sprendimų
-- Švarus, palaikomas kodas
-- Sukuriu kartą — eksploatuoju ilgai
+- Tęstinumas vietoje patogumo
+- Kuriu stresui, ne demonstracijoms
+- Ilgaamžiškumas > greiti sprendimai
 
 <hr/>
 
@@ -153,6 +167,12 @@ Programinė įranga, orientuota į:
 - Savininkas, ne rangovas  
 - Sistemos, ne fragmentai  
 - Produkcija, ne teorija  
+- Saugumas, ne greitis  
 
-> Aš nesikreipiu dėl pareigų.  
-> Aš kuriu platformas, kuriomis žmonės pasitiki.
+> Aš neprojektuoju idealioms sąlygoms.  
+> Aš projektuoju realiam pasauliui.  
+>
+> Kur viskas lūžta.  
+> Kur ryšys dingsta.  
+> Kur žmonės klysta.  
+> Kur sistemos turi gesti saugiai.
