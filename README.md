@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <sub><strong>Founder-level full-stack</strong> • Systems over shortcuts • Production over theory</sub>
+  <sub><strong>Safety-first systems engineer</strong> • Failure-aware design • Production over theory • Continuity over convenience</sub>
 </p>
 
 <br/>
@@ -20,7 +20,7 @@
 <h1 align="center">Terence Lewis</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=00FF99&center=true&vCenter=true&width=900&lines=Founder+%7C+Full-Stack+Engineer;Systems+Builder+%26+Product+Owner;Building+Production-Ready+Platforms;Remote+%7C+International" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=00FF99&center=true&vCenter=true&width=900&lines=Safety-First+Systems+Engineer;Robotics+%26+Autonomous+Systems;Serious+Full-Stack+Platforms;Failure-Aware+Architecture;Remote+%7C+International" />
 </p>
 
 <p align="center">
@@ -31,22 +31,22 @@
 
 ## 🧠 Personal Profile
 
-I build **complete software systems** — not demos, not tutorials, not experiments.
+I design and build **safety-first, failure-aware systems** — not demos, not tutorials, not throwaway prototypes.
 
-Founder-level full-stack engineer designing, building, and operating **real-world platforms** end-to-end:
-frontend, backend, APIs, databases, admin systems, automation, and infrastructure.
+My work focuses on **real-world platforms** where dropped connections, partial failures, stale commands, and human error are expected — not ignored.
 
-> I don’t just write code — I **own the systems I build**.
+I don’t just make things work.  
+I design how they **fail**, **recover**, and **remain observable** under stress.
 
 <hr/>
 
 ## 🏗 What I Do
 
-- Architect and build **full-stack applications**
-- Design **customer and owner/admin systems**
-- Build **scalable APIs & databases**
-- Create **automation and internal tooling**
-- Operate **remote-first, production systems**
+- Architect **fault-tolerant, safety-first systems**
+- Design **control layers, authority models & failure boundaries**
+- Build **full-stack platforms with real-world constraints**
+- Create **observable, debuggable, replayable systems**
+- Design for **continuity, not ideal conditions**
 
 <hr/>
 
@@ -69,22 +69,33 @@ A real, operational hospitality system.
 - Automation & internal tools  
 - Built as a **business system**, not a prototype  
 
-### 🕸 Harness Meshnet Software
-Custom software focused on:
-- Secure data flow
-- Modular architecture
-- Distributed system concepts
-- Practical system design
+---
+
+### 🕸 Harness — Safety-First Control & Mesh Networking Platform
+
+A modular control platform designed around **failure modes, authority separation, and continuity-first networking**.
+
+**Focus areas:**
+- Formal state machines (SAFE_IDLE, ARMED, ESTOP)
+- Command aging, heartbeats, watchdogs
+- Authority arbitration (human vs autonomous)
+- Kill paths & safe-state degradation
+- Mesh-style relay concepts for extended range
+- Multi-transport resilience (WiFi, Bluetooth, RF-class concepts)
+- Dead-stop elimination
+- Replayable command streams & post-mortem analysis
+
+This is not a toy project — it is a **systems engineering exercise** in building control software that behaves predictably when things go wrong.
 
 <hr/>
 
 ## 📌 Pinned Repository Descriptions
 
 **CabinApp**  
-> Full-stack platform for private cabin stays — booking, admin systems, APIs, automation.
+> Full-stack hospitality platform — booking, admin systems, APIs, automation, and real-world operations.
 
-**Harness Meshnet**  
-> Experimental mesh-style software focused on secure data flow and modular system architecture.
+**Harness**  
+> Safety-first control & mesh-style networking platform focused on failure modes, authority modeling, and continuity-first system design.
 
 **RPSLS (Rock-Paper-Scissors-Lizard-Spock)**  
 > Logic-driven JavaScript project showcasing clean state management and scalable frontend structure.
@@ -99,8 +110,9 @@ Custom software focused on:
 - **City & Guilds – Level 3 Certificate in ICT Systems & Principles**
 - **Code Institute – 5 Day Coding Challenge**
 - Continuous self-directed training in:
-  - Full-stack development
-  - System architecture
+  - Systems architecture
+  - Control & safety modeling
+  - Full-stack platforms
   - APIs & databases
   - Production workflows
 
@@ -140,11 +152,12 @@ Custom software focused on:
 
 ## 🌍 Working Style
 
-- Founder mindset
-- Remote & asynchronous
+- Safety-first thinking
+- Failure-aware design
 - Systems over shortcuts
-- Clean, maintainable code
-- Build once, operate long-term
+- Continuity over convenience
+- Build for stress, not demos
+- Long-term survivability over fast hacks
 
 <hr/>
 
@@ -156,6 +169,12 @@ This GitHub profile aligns with my **CV and LinkedIn**:
 - Owner, not contractor  
 - Systems, not snippets  
 - Production over theory  
+- Safety over speed  
 
-> I don’t apply for roles.  
-> I build platforms people rely on.
+> I don’t build for perfect conditions.  
+> I build for the real world.  
+>
+> Where things break.  
+> Where signals drop.  
+> Where humans make mistakes.  
+> Where systems must fail safely.
