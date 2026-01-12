@@ -8,10 +8,17 @@
   <sub><strong>Saugumui orientuotas sistemų inžinierius</strong> • Klaidų suvokimas • Produkcija > teorija • Tęstinumas > patogumas</sub>
 </p>
 
+<p align="center">
+  <em>Aš kuriu sistemas, kurios sugenda saugiai, o ne tyliai.</em>
+</p>
+
 <br/>
 
+<!-- ========================= -->
+<!-- HERO / BANNER PLACEHOLDER -->
+<!-- ========================= -->
 <p align="center">
-  <img src="https://i.pinimg.com/originals/95/36/a6/9536a67a3ccf108635cea2fc9bb4c62e.gif"/>
+  <img src="https://www.zartis.com/wp-content/uploads/2024/10/ai-agents.gif"/>
 </p>
 
 <h1 align="center">Terence Lewis</h1>
@@ -33,7 +40,7 @@ Projektuoju ir kuriu **saugumui orientuotas, klaidas numatančias sistemas** —
 Mano darbas skirtas **realaus pasaulio platformoms**, kur nutrūksta ryšys, atsiranda daliniai gedimai, pasenę duomenys ir žmogiškos klaidos — ir tai yra **numatyta**, o ne ignoruojama.
 
 Aš ne tik padarau, kad sistema veiktų.  
-Aš projektuojų, kaip ji **sugenda**, **atsistato** ir lieka **stebima bei valdoma**.
+Aš projektuojų, kaip ji **sugenda**, **atsistato** ir lieka **stebima bei valdoma** esant stresui.
 
 <hr/>
 
@@ -59,10 +66,10 @@ Aš projektuojų, kaip ji **sugenda**, **atsistato** ir lieka **stebima bei vald
 ### 🏕 CabinApp — privačių kabinų platforma
 Reali, veikianti svetingumo sistema.
 
-**Kas viduje:**
+**Funkcijos:**
 - Klientų rezervavimo patirtis  
 - Savininko / administratoriaus skydelis  
-- Backend API ir DB logika  
+- Backend API ir duomenų bazės logika  
 - Automatizacija ir vidiniai įrankiai  
 - Sukurta kaip **verslo sistema**, ne prototipas  
 
@@ -70,11 +77,11 @@ Reali, veikianti svetingumo sistema.
 
 ### 🕸 Harness — saugumui orientuota valdymo ir mesh tinklų platforma
 
-Modulinė valdymo sistema, sukurta remiantis **gedimų modeliais, autoriteto atskyrimu ir tęstinumo principu**.
+Modulinė valdymo sistema, sukurta remiantis **gedimų modeliais, autoriteto atskyrimu ir tęstinumo principais**.
 
 **Pagrindinės sritys:**
 - Formalios būsenų mašinos (SAFE_IDLE, ARMED, ESTOP)
-- Komandų senėjimas, širdies dūžiai, watchdog’ai
+- Komandų senėjimas, „heartbeat’ai“, watchdog’ai
 - Autoriteto arbitražas (žmogus vs autonomija)
 - Kill-path’ai ir saugios būsenos degradacija
 - Mesh tipo relinių tinklų koncepcijos
@@ -83,23 +90,23 @@ Modulinė valdymo sistema, sukurta remiantis **gedimų modeliais, autoriteto ats
 - Atkuriami komandų srautai ir post-mortem analizė
 
 Tai nėra žaislinis projektas.  
-Tai **sistemų inžinerijos darbas**, skirtas elgsenai, kai viskas eina ne pagal planą.
+Tai **sistemų inžinerijos darbas**, skirtas nuspėjamam elgesiui, kai viskas eina ne pagal planą.
 
 <hr/>
 
 ## 📌 Prisegtų repozitorijų aprašymai
 
 **CabinApp**  
-> Full-stack svetingumo platforma — rezervavimas, administravimas, API, automatizacija, realios operacijos.
+> Full-stack svetingumo platforma — rezervavimas, administravimas, API, automatizacija ir realios operacijos.
 
 **Harness**  
-> Saugumui orientuota valdymo ir mesh tinklų platforma: gedimų modeliai, autoritetas, tęstinumas.
+> Saugumui orientuota valdymo ir mesh tinklų platforma: gedimų modeliai, autoritetas ir tęstinumas.
 
-**RPSLS**  
+**RPSLS (Rock-Paper-Scissors-Lizard-Spock)**  
 > JavaScript projektas: švari logika, būsenos valdymas, plečiama struktūra.
 
 **Utilities / Portfolio**  
-> Produkciniai įrankiai, eksperimentai ir komponentai realiems projektams.
+> Produkciniai įrankiai, eksperimentai ir pakartotinai naudojami komponentai realiems projektams.
 
 <hr/>
 
@@ -111,7 +118,7 @@ Tai **sistemų inžinerijos darbas**, skirtas elgsenai, kai viskas eina ne pagal
   - Sistemų architektūra
   - Valdymo ir saugumo modeliai
   - Full-stack platformos
-  - API ir DB
+  - API ir duomenų bazės
   - Produkciniai procesai
 
 <hr/>
@@ -169,6 +176,8 @@ Tai **sistemų inžinerijos darbas**, skirtas elgsenai, kai viskas eina ne pagal
 - Produkcija, ne teorija  
 - Saugumas, ne greitis  
 
+> **Aš kuriu sistemas, kurios sugenda saugiai, o ne tyliai.**  
+>
 > Aš neprojektuoju idealioms sąlygoms.  
 > Aš projektuoju realiam pasauliui.  
 >
