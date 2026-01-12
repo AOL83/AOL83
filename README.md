@@ -8,6 +8,10 @@
   <sub><strong>Safety-first systems engineer</strong> • Failure-aware design • Production over theory • Continuity over convenience</sub>
 </p>
 
+<p align="center">
+  <em>I design systems that fail safely, not silently.</em>
+</p>
+
 <br/>
 
 <!-- ========================= -->
@@ -85,7 +89,8 @@ A modular control platform designed around **failure modes, authority separation
 - Dead-stop elimination
 - Replayable command streams & post-mortem analysis
 
-This is not a toy project — it is a **systems engineering exercise** in building control software that behaves predictably when things go wrong.
+This is not a toy project.  
+It is a **systems engineering exercise** in building control software that behaves predictably when things go wrong.
 
 <hr/>
 
@@ -171,6 +176,8 @@ This GitHub profile aligns with my **CV and LinkedIn**:
 - Production over theory  
 - Safety over speed  
 
+> **I design systems that fail safely, not silently.**  
+>
 > I don’t build for perfect conditions.  
 > I build for the real world.  
 >
