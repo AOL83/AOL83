@@ -149,11 +149,12 @@ It is a **systems engineering exercise** in building control software that behav
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AOL83&show_icons=true&theme=dark&hide_border=true" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=AOL83&show_icons=true&theme=dark&hide_border=true" />
+
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AOL83&layout=compact&theme=dark&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api?username=AOL83&show_icons=true&theme=dark&hide_border=true" />
 </p>
 
 <hr/>
