@@ -154,7 +154,7 @@ It is a **systems engineering exercise** in building control software that behav
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AOL83&show_icons=true&theme=dark&hide_border=true" />
+  
 </p>
 
 <hr/>
