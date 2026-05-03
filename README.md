@@ -1,8 +1,3 @@
-<!-- ========================================================= -->
-<!-- AOL83 / Terence Lewis GitHub Profile README               -->
-<!-- Aurora Logistical Eco Holdings Limited                    -->
-<!-- ========================================================= -->
-
 <p align="center">
   <a href="README.md"><strong>🌍 English</strong></a>
   &nbsp;|&nbsp;
@@ -16,6 +11,15 @@
     src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:050510,35:00f5ff,65:ff2bd6,100:f9f871&text=Terence%20Lewis&fontColor=ffffff&fontSize=48&fontAlignY=38&desc=Safety-first%20systems%20engineer%20%E2%80%A2%20Failure-aware%20design%20%E2%80%A2%20Production%20over%20theory&descAlignY=58&animation=fadeIn"
     alt="Terence Lewis profile banner"
   />
+</p>
+
+<p align="center">
+  <a href="https://git.io/typing-svg">
+    <img
+      src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=800&size=26&duration=2600&pause=650&color=00F5FF&center=true&vCenter=true&width=1100&lines=Safety-first+systems+engineer;Failure-aware+design;Production+over+theory;Continuity+over+convenience;Full-stack+platforms;Control+systems;Aurora+Logistical+Eco+Holdings+Limited;Code+Strategy+Solutions;Bridge+IT;WaterFallsLT"
+      alt="Typing SVG banner"
+    />
+  </a>
 </p>
 
 <p align="center">
@@ -167,14 +171,14 @@ Production-ready tools, experiments, and reusable components used across real pr
   <a href="https://www.instagram.com/WaterFallsLT/">
     <img src="https://img.shields.io/badge/Instagram-@WaterFallsLT-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram WaterFallsLT" />
   </a>
-  <a href="#">
+  <a href="https://waterfallslt.substack.com/">
     <img src="https://img.shields.io/badge/Substack-WaterFallsLT-FF6719?style=for-the-badge&logo=substack&logoColor=white" alt="Substack WaterFallsLT" />
   </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/LinkedIn-Add%20URL-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  <a href="https://aol83.github.io/auroralogisticalecoholdings/">
+    <img src="https://img.shields.io/badge/Aurora%20Website-Live%20Site-00f5ff?style=for-the-badge&logo=githubpages&logoColor=050510" alt="Aurora Logistical Eco Holdings website" />
   </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/Aurora%20Website-Add%20URL-00f5ff?style=for-the-badge&logo=githubpages&logoColor=050510" alt="Aurora Website" />
+  <a href="https://github.com/AOL83/Code-Strategy-Solutions">
+    <img src="https://img.shields.io/badge/Code%20Strategy%20Solutions-CSS-ff2bd6?style=for-the-badge&logo=github&logoColor=white" alt="Code Strategy Solutions repository" />
   </a>
 </p>
 
