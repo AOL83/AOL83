@@ -6,18 +6,45 @@
 
 <br />
 
+<!-- ORIGINALUS LIETUVIŠKAS CYBERPUNK CAPSULE BANERIS -->
 <p align="center">
   <img
-    src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:050510,30:00ff85,65:ffe600,100:ff355e&text=Terence%20Lewis&fontColor=ffffff&fontSize=48&fontAlignY=38&desc=Saugumui%20orientuotas%20sistem%C5%B3%20in%C5%BEinierius%20%E2%80%A2%20Gedimams%20atsparus%20projektavimas%20%E2%80%A2%20Produkcija%20vir%C5%A1%20teorijos&descAlignY=58&animation=fadeIn"
-    alt="Terence Lewis profilio baneris"
+    src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:050510,30:00ff85,65:ffe600,100:ff355e&text=Terence%20Lewis&fontColor=ffffff&fontSize=54&fontAlignY=38&desc=Saugumui%20orientuotas%20sistem%C5%B3%20in%C5%BEinierius%20%E2%80%A2%20Gedimams%20atsparus%20projektavimas%20%E2%80%A2%20Produkcija%20vir%C5%A1%20teorijos%20%E2%80%A2%20T%C4%99stinumas%20vir%C5%A1%20patogumo&descAlignY=58&descSize=20&animation=fadeIn"
+    alt="Terence Lewis lietuviškas cyberpunk profilio baneris"
+    width="100%"
   />
 </p>
 
+<!-- KIBERNETINIS LANGINIS ĮĖJIMO TAŠKAS -->
+<p align="center">
+  <a href="https://aol83.github.io/auroralogisticalecoholdings/?launch=true">
+    <img
+      src="./assets/dragon-egg-window.svg"
+      alt="Aurora Logistical Eco Holdings kibernetinis README įėjimo langas"
+      width="760"
+    />
+  </a>
+</p>
+
+<!-- PAGRINDINIAI PALEIDIMO MYGTUKAI -->
+<p align="center">
+  <a href="https://aol83.github.io/auroralogisticalecoholdings/?launch=true">
+    <img src="https://img.shields.io/badge/PALEISTI-AURORA%20SISTEMĄ-00ff85?style=for-the-badge&logo=githubpages&logoColor=050510" alt="Paleisti Aurora sistemą" />
+  </a>
+  <a href="https://waterfallslt.substack.com/">
+    <img src="https://img.shields.io/badge/SKAITYTI-WaterFallsLT%20Substack-FF6719?style=for-the-badge&logo=substack&logoColor=white" alt="Skaityti WaterFallsLT Substack" />
+  </a>
+  <a href="https://github.com/AOL83/Code-Strategy-Solutions">
+    <img src="https://img.shields.io/badge/CSS-Code%20Strategy%20Solutions-ff355e?style=for-the-badge&logo=github&logoColor=white" alt="Code Strategy Solutions" />
+  </a>
+</p>
+
+<!-- LIETUVIŠKAS FLUORESCENTINIS CYBERPUNK TYPING BANERIS -->
 <p align="center">
   <a href="https://git.io/typing-svg">
     <img
       src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=800&size=26&duration=2600&pause=650&color=00FF85&center=true&vCenter=true&width=1200&lines=Saugumui+orientuotas+sistem%C5%B3+in%C5%BEinierius;Gedimams+atsparus+projektavimas;Produkcija+vir%C5%A1+teorijos;T%C4%99stinumas+vir%C5%A1+patogumo;Full-stack+platformos;Valdymo+sistemos;Aurora+Logistical+Eco+Holdings+Limited;Code+Strategy+Solutions;Bridge+IT;WaterFallsLT"
-      alt="Cyberpunk typing SVG baneris"
+      alt="Lietuviškas fluorescentinis cyberpunk typing SVG baneris"
     />
   </a>
 </p>
@@ -30,8 +57,9 @@
   <em>Aš kuriu sistemas, kurios sugenda saugiai, o ne tyliai.</em>
 </p>
 
+<!-- PROFILIO PERŽIŪROS + ŽENKLELIAI -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=AOL83&style=for-the-badge&color=00ff85&label=PROFILIO+PERŽIŪROS" alt="Profilio peržiūros" />
+  <img src="https://komarev.com/ghpvc/?username=AOL83&style=for-the-badge&color=00ff85&label=PROFILIO+PER%C5%BDI%C5%AAROS" alt="Profilio peržiūros" />
   <img src="https://img.shields.io/badge/Vieta-Londonas%20%2F%20Tarptautinis-ff355e?style=for-the-badge" alt="Vieta" />
   <img src="https://img.shields.io/badge/Kryptis-Saugios%20sistemos-ffe600?style=for-the-badge&labelColor=050510&color=ffe600" alt="Saugios sistemos" />
 </p>
@@ -70,7 +98,7 @@ Aš projektuoju, kaip ji sugenda, atsistato ir išlieka stebima bei valdoma esan
 
 - **Aurora Logistical Eco Holdings Limited** — Jungtinės Karalystės technologijų įmonė, kurianti aplikacijas, svetaines, individualius programinius sprendimus, skaitmenines sistemas ir tyrimų infrastruktūrą.
 
-- **Lietuviška UAB žemės veikla** — įmonė, valdanti žemę privačioms poilsio kabinoms, kur visas susijusias sistemas projektuojų ir valdau nuo pradžios iki pabaigos.
+- **Lietuviška UAB žemės veikla** — įmonė, valdanti žemę privačioms poilsio kabinoms, kur visas susijusias sistemas projektuoju ir valdau nuo pradžios iki pabaigos.
 
 - **Code Strategy Solutions (CSS)** — vidinė „Aurora“ programinės strategijos ir studijų grupė, skirta programų struktūrai, techniniam mokymuisi, prototipų sistemoms ir praktinei kodavimo strategijai.
 
@@ -107,7 +135,7 @@ Modulinė valdymo sistema, sukurta remiantis gedimų modeliais, autoriteto atsky
 - Autoriteto arbitražas: žmogus prieš autonomiją
 - „Kill path“ mechanizmai ir saugios būsenos degradacija
 - Mesh tipo relinių tinklų koncepcijos didesniam veikimo nuotoliui
-- Daugiakanalė komunikacija: Wi‑Fi, Bluetooth ir RF tipo ryšiai
+- Daugiakanalė komunikacija: Wi-Fi, Bluetooth ir RF tipo ryšiai
 - „Dead-stop“ situacijų eliminavimas
 - Atkuriami komandų srautai ir post-mortem analizė
 
@@ -175,7 +203,7 @@ Produkciniai įrankiai, eksperimentai ir pakartotinai naudojami komponentai, nau
     <img src="https://img.shields.io/badge/Substack-WaterFallsLT-FF6719?style=for-the-badge&logo=substack&logoColor=white" alt="Substack WaterFallsLT" />
   </a>
   <a href="https://aol83.github.io/auroralogisticalecoholdings/">
-    <img src="https://img.shields.io/badge/Aurora%20Svetain%C4%97-Gyva%20svetain%C4%97-00ff85?style=for-the-badge&logo=githubpages&logoColor=050510" alt="Aurora svetainė" />
+    <img src="https://img.shields.io/badge/Aurora%20svetainė-Gyva%20svetainė-00ff85?style=for-the-badge&logo=githubpages&logoColor=050510" alt="Aurora svetainė" />
   </a>
   <a href="https://github.com/AOL83/Code-Strategy-Solutions">
     <img src="https://img.shields.io/badge/Code%20Strategy%20Solutions-CSS-ff355e?style=for-the-badge&logo=github&logoColor=white" alt="Code Strategy Solutions repozitorija" />
@@ -264,7 +292,7 @@ Produkciniai įrankiai, eksperimentai ir pakartotinai naudojami komponentai, nau
 - Produkcija, ne teorija
 - Saugumas, ne greitis
 - Tęstinumas, ne patogumas
-- Gedimams atsparus projektavimas vietoje traptaus optimizmo
+- Gedimams atsparus projektavimas vietoje trapaus optimizmo
 
 Aš kuriu sistemas, kurios sugenda saugiai, o ne tyliai.
 
