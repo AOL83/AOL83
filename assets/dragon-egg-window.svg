@@ -1,1 +1,178 @@
+<svg width="1000" height="1414" viewBox="0 0 1000 1414" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGlow" x1="0" y1="0" x2="1000" y2="1414" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0312"/>
+      <stop offset="0.35" stop-color="#090615"/>
+      <stop offset="0.7" stop-color="#040816"/>
+      <stop offset="1" stop-color="#0B0B0E"/>
+    </linearGradient>
 
+    <linearGradient id="frameGrad" x1="30" y1="30" x2="970" y2="1384" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF2B6E"/>
+      <stop offset="0.24" stop-color="#FF2BD6"/>
+      <stop offset="0.50" stop-color="#FFE600"/>
+      <stop offset="0.72" stop-color="#00F5FF"/>
+      <stop offset="1" stop-color="#7CFF00"/>
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="190" y1="130" x2="820" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF315D"/>
+      <stop offset="0.28" stop-color="#FF2BD6"/>
+      <stop offset="0.60" stop-color="#8B5CFF"/>
+      <stop offset="1" stop-color="#00D9FF"/>
+    </linearGradient>
+
+    <linearGradient id="subGrad" x1="320" y1="0" x2="700" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE600"/>
+      <stop offset="1" stop-color="#A8FF00"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="bigGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .small {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        font-size: 18px;
+        letter-spacing: 4px;
+        fill: #d9f7ff;
+      }
+      .micro {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        font-size: 14px;
+        letter-spacing: 3px;
+        fill: #9beeff;
+      }
+      .label {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        fill: white;
+      }
+      .value {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        fill: #dffcff;
+      }
+      .tiny {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        font-size: 12px;
+        letter-spacing: 2px;
+        fill: #b7faff;
+      }
+      .windowText {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        font-size: 38px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        fill: #e8fbff;
+      }
+      .windowSub {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        font-size: 16px;
+        letter-spacing: 3px;
+        fill: #9feaff;
+      }
+      .barLabel {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        fill: #f5fbff;
+      }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="1414" rx="28" fill="url(#bgGlow)"/>
+
+  <rect x="12" y="12" width="976" height="1390" rx="28" stroke="url(#frameGrad)" stroke-width="8" opacity="0.9"/>
+  <rect x="24" y="24" width="952" height="1366" rx="24" stroke="rgba(255,255,255,0.22)" stroke-width="2"/>
+
+  <circle cx="90" cy="90" r="34" fill="#ff2b6e" opacity="0.28" filter="url(#bigGlow)"/>
+  <circle cx="920" cy="104" r="34" fill="#a8ff00" opacity="0.24" filter="url(#bigGlow)"/>
+  <circle cx="900" cy="1310" r="32" fill="#00f5ff" opacity="0.18" filter="url(#bigGlow)"/>
+
+  <path d="M318 36H691L730 74V150L691 186H318L279 150V74L318 36Z" fill="#0a0d12" stroke="url(#frameGrad)" stroke-width="4"/>
+  <text x="500" y="92" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; letter-spacing: 3px; fill: #FFE600;">
+    AURORA ENTRY
+  </text>
+  <text x="500" y="132" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 700; letter-spacing: 5px; fill: #DDFDFF;">
+    WINDOWED DISPLAY PORT
+  </text>
+
+  <text x="72" y="115" class="small" fill="#FF455A">2026</text>
+  <text x="938" y="115" class="small" text-anchor="end" fill="#00F5FF">2026</text>
+
+  <text transform="translate(62 268) rotate(90)" class="small" fill="#FF2BD6">AURORA // SYSTEM // GATE</text>
+  <text transform="translate(950 280) rotate(90)" class="small" fill="#A8FF00">DISPLAY // ENTRY // README</text>
+
+  <text x="500" y="285" text-anchor="middle"
+        style="font-family: Impact, Arial Black, Arial, sans-serif; font-size: 96px; font-weight: 900; letter-spacing: 2px; fill: url(#titleGrad);"
+        filter="url(#softGlow)">
+    WINDOW NODE
+  </text>
+
+  <text x="500" y="345" text-anchor="middle"
+        style="font-family: Arial, Helvetica, sans-serif; font-size: 40px; font-weight: 800; letter-spacing: 10px; fill: url(#subGrad);">
+    README ENTRY
+  </text>
+
+  <path d="M122 403H878L925 450V835L878 882H203L122 801V403Z" fill="#D9D9D9" fill-opacity="0.08" stroke="url(#frameGrad)" stroke-width="5"/>
+  <path d="M142 421H858L903 464V814L860 857H212L142 787V421Z" fill="url(#bgGlow)" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+
+  <rect x="160" y="440" width="680" height="340" rx="18" fill="#ffffff" fill-opacity="0.05" stroke="#9eeeff" stroke-opacity="0.35"/>
+  <rect x="168" y="448" width="664" height="324" rx="14" fill="#ffffff" fill-opacity="0.02"/>
+
+  <text x="500" y="560" text-anchor="middle" class="windowText" filter="url(#softGlow)">CLICK TO ENTER</text>
+  <text x="500" y="605" text-anchor="middle" class="windowSub">AURORA LOGISTICAL ECO HOLDINGS LIMITED</text>
+  <text x="500" y="635" text-anchor="middle" class="windowSub">SUBSTACK LAUNCHPAD → GITHUB RUNTIME</text>
+  <text x="500" y="710" text-anchor="middle" class="tiny">README display node // live runtime portal // code strategy solutions</text>
+
+  <circle cx="72" cy="682" r="20" fill="#FF2B6E"/>
+  <path d="M72 655C80 666 85 674 85 682C85 691 79 699 72 699C65 699 59 691 59 682C59 674 64 666 72 655Z" fill="#14030B"/>
+
+  <circle cx="72" cy="780" r="20" fill="#FF2B6E"/>
+  <path d="M62 792C66 780 74 772 83 768C80 773 79 778 79 782C79 790 73 796 66 796H62V792Z" fill="#14030B"/>
+
+  <circle cx="928" cy="780" r="20" fill="#A8FF00"/>
+  <circle cx="928" cy="780" r="11" fill="#0B1203" stroke="#A8FF00"/>
+
+  <path d="M120 932H810L846 968V1004L810 1040H120L84 1004V968L120 932Z" fill="#090A11" stroke="#FF2B6E" stroke-width="4"/>
+  <text x="155" y="992" class="barLabel">STRENGTH</text>
+  <rect x="650" y="953" width="160" height="66" rx="10" fill="#0D0E13" stroke="#FF2B6E" stroke-width="3"/>
+  <rect x="658" y="961" width="132" height="50" rx="7" fill="#FF2B6E" fill-opacity="0.35"/>
+  <text x="730" y="995" text-anchor="middle" class="value">95</text>
+
+  <path d="M120 1048H810L846 1084V1120L810 1156H120L84 1120V1084L120 1048Z" fill="#090A11" stroke="#FFE600" stroke-width="4"/>
+  <text x="155" y="1108" class="barLabel">INTELLIGENCE</text>
+  <rect x="650" y="1069" width="160" height="66" rx="10" fill="#0D0E13" stroke="#FFE600" stroke-width="3"/>
+  <rect x="658" y="1077" width="142" height="50" rx="7" fill="#FFE600" fill-opacity="0.30"/>
+  <text x="730" y="1111" text-anchor="middle" class="value">98</text>
+
+  <path d="M120 1164H810L846 1200V1236L810 1272H120L84 1236V1200L120 1164Z" fill="#090A11" stroke="#FF2BD6" stroke-width="4"/>
+  <text x="155" y="1224" class="barLabel">SPEED</text>
+  <rect x="650" y="1185" width="160" height="66" rx="10" fill="#0D0E13" stroke="#FF2BD6" stroke-width="3"/>
+  <rect x="658" y="1193" width="126" height="50" rx="7" fill="#FF2BD6" fill-opacity="0.35"/>
+  <text x="730" y="1227" text-anchor="middle" class="value">90</text>
+
+  <rect x="130" y="1330" width="740" height="38" rx="12" fill="#05070D" stroke="url(#frameGrad)" stroke-width="2"/>
+  <text x="500" y="1355" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 4px; fill: url(#frameGrad);">
+    RAW SIGNAL. LIVE SYSTEM. CLICK TO ENTER.
+  </text>
+</svg>
