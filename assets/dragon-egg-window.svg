@@ -1,233 +1,56 @@
 <svg width="1000" height="1414" viewBox="0 0 1000 1414" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGlow" x1="0" y1="0" x2="1000" y2="1414" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#050510"/>
-      <stop offset="0.35" stop-color="#090615"/>
-      <stop offset="0.7" stop-color="#040816"/>
-      <stop offset="1" stop-color="#0B0B0E"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1000" y2="1414" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050510"/><stop offset=".45" stop-color="#080615"/><stop offset="1" stop-color="#030812"/>
     </linearGradient>
-
-    <linearGradient id="frameGrad" x1="30" y1="30" x2="970" y2="1384" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FF2B6E"/>
-      <stop offset="0.24" stop-color="#FF2BD6"/>
-      <stop offset="0.50" stop-color="#FFE600"/>
-      <stop offset="0.72" stop-color="#00F5FF"/>
-      <stop offset="1" stop-color="#7CFF00"/>
+    <linearGradient id="frame" x1="30" y1="20" x2="970" y2="1394" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff305f"/><stop offset=".28" stop-color="#ff2bd6"/><stop offset=".52" stop-color="#ffe600"/><stop offset=".74" stop-color="#00f5ff"/><stop offset="1" stop-color="#7cff00"/>
     </linearGradient>
-
-    <linearGradient id="titleGrad" x1="180" y1="120" x2="820" y2="320" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FF315D"/>
-      <stop offset="0.28" stop-color="#FF2BD6"/>
-      <stop offset="0.60" stop-color="#8B5CFF"/>
-      <stop offset="1" stop-color="#00D9FF"/>
+    <linearGradient id="title" x1="120" y1="170" x2="880" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff164f"/><stop offset=".38" stop-color="#ff2bd6"/><stop offset=".7" stop-color="#8b5cff"/><stop offset="1" stop-color="#208cff"/>
     </linearGradient>
-
-    <radialGradient id="coreGlow" cx="50%" cy="48%" r="50%">
-      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.38"/>
-      <stop offset="45%" stop-color="#FF2BD6" stop-opacity="0.14"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
-    </radialGradient>
-
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="7" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-
-    <filter id="bigGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="14" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <clipPath id="mainWindowClip">
-      <path d="M142 421H858L903 464V814L860 857H212L142 787V421Z"/>
-    </clipPath>
-
     <style>
-      .small {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px;
-        letter-spacing: 4px;
-        fill: #d9f7ff;
-      }
-
-      .windowText {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 34px;
-        font-weight: 900;
-        letter-spacing: 4px;
-        fill: #e8fbff;
-      }
-
-      .windowSub {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        letter-spacing: 3px;
-        fill: #9feaff;
-      }
-
-      .tiny {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
-        letter-spacing: 2px;
-        fill: #b7faff;
-      }
-
-      .barLabel {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 24px;
-        font-weight: 800;
-        letter-spacing: 2px;
-        fill: #f5fbff;
-      }
-
-      .value {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        font-weight: 800;
-        letter-spacing: 2px;
-        fill: #dffcff;
-      }
-
-      .spinEgg {
-        transform-box: fill-box;
-        transform-origin: center;
-        animation: eggSpin 10s linear infinite;
-      }
-
-      .pulseRing {
-        transform-box: fill-box;
-        transform-origin: center;
-        animation: ringPulse 3.2s ease-in-out infinite;
-      }
-
-      .scanBeam {
-        animation: scanMove 4.2s ease-in-out infinite;
-      }
-
-      @keyframes eggSpin {
-        0% { transform: rotateY(0deg) rotateZ(0deg) scale(1); opacity: 0.98; }
-        25% { transform: rotateY(35deg) rotateZ(1deg) scale(1.02); opacity: 1; }
-        50% { transform: rotateY(0deg) rotateZ(0deg) scale(1); opacity: 0.96; }
-        75% { transform: rotateY(-35deg) rotateZ(-1deg) scale(1.02); opacity: 1; }
-        100% { transform: rotateY(0deg) rotateZ(0deg) scale(1); opacity: 0.98; }
-      }
-
-      @keyframes ringPulse {
-        0%, 100% { opacity: 0.35; transform: scale(0.96); }
-        50% { opacity: 0.95; transform: scale(1.06); }
-      }
-
-      @keyframes scanMove {
-        0% { transform: translateY(-260px); opacity: 0; }
-        22% { opacity: 0.55; }
-        55% { opacity: 0.2; }
-        100% { transform: translateY(260px); opacity: 0; }
-      }
+      .label{font-family:Arial,Helvetica,sans-serif;font-weight:900;letter-spacing:7px;fill:#eaff38}
+      .small{font-family:Arial,Helvetica,sans-serif;font-weight:900;letter-spacing:4px;fill:#dffbff}
+      .side{font-family:Arial,Helvetica,sans-serif;font-size:18px;letter-spacing:5px;fill:#dffbff}
+      .btnText{font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:24px;letter-spacing:3px;fill:#f4fbff}
+      .pulse{animation:p 2.6s ease-in-out infinite;transform-origin:center;transform-box:fill-box}
+      @keyframes p{0%,100%{opacity:.55;transform:scale(.96)}50%{opacity:1;transform:scale(1.04)}}
     </style>
   </defs>
+  <rect width="1000" height="1414" rx="30" fill="url(#bg)"/>
+  <rect x="14" y="14" width="972" height="1386" rx="30" stroke="url(#frame)" stroke-width="8"/>
+  <rect x="42" y="42" width="916" height="1330" rx="24" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+  <text x="95" y="120" class="small" font-size="28" fill="#ff305f">2026</text>
+  <text x="905" y="120" class="small" font-size="28" text-anchor="end" fill="#208cff">2026</text>
+  <path d="M285 36H715C752 36 782 66 782 103C782 140 752 170 715 170H285C248 170 218 140 218 103C218 66 248 36 285 36Z" fill="#080a12" stroke="#eaff38" stroke-opacity=".35" stroke-width="3"/>
+  <text x="500" y="96" text-anchor="middle" class="label" font-size="58">TERENCE OS</text>
+  <text x="500" y="132" text-anchor="middle" class="small" font-size="22">OPERATING SYSTEMS</text>
+  <text x="500" y="315" text-anchor="middle" style="font-family:Impact,Arial Black,Arial,sans-serif;font-size:112px;font-weight:900;letter-spacing:2px;fill:url(#title)" filter="url(#glow)">DRAGON EGG</text>
+  <text x="500" y="384" text-anchor="middle" class="label" font-size="38">CHARACTER</text>
 
-  <rect x="0" y="0" width="1000" height="1414" rx="28" fill="url(#bgGlow)"/>
+  <text transform="translate(78 520) rotate(90)" class="side">README // VIRTUAL // EMULATOR</text>
+  <text transform="translate(933 520) rotate(90)" class="side">CLICK // EGG // LOAD // ALEH</text>
 
-  <rect x="12" y="12" width="976" height="1390" rx="28" stroke="url(#frameGrad)" stroke-width="8" opacity="0.94"/>
-  <rect x="24" y="24" width="952" height="1366" rx="24" stroke="rgba(255,255,255,0.22)" stroke-width="2"/>
+  <path d="M118 420H882L928 466V1032L882 1078H118L72 1032V466L118 420Z" fill="rgba(255,255,255,.05)" stroke="url(#frame)" stroke-width="5"/>
+  <rect x="110" y="455" width="780" height="560" rx="28" fill="#071018" stroke="#36e9ff" stroke-opacity=".45" stroke-width="2"/>
+  <ellipse cx="500" cy="745" rx="330" ry="255" fill="#00f5ff" opacity=".08"/>
+  <ellipse class="pulse" cx="500" cy="745" rx="260" ry="260" fill="none" stroke="#00f5ff" stroke-width="3" opacity=".45"/>
+  <ellipse class="pulse" cx="500" cy="745" rx="205" ry="205" fill="none" stroke="#ff2bd6" stroke-width="3" opacity=".45"/>
 
-  <circle cx="90" cy="90" r="34" fill="#ff2b6e" opacity="0.28" filter="url(#bigGlow)"/>
-  <circle cx="920" cy="104" r="34" fill="#a8ff00" opacity="0.24" filter="url(#bigGlow)"/>
-  <circle cx="900" cy="1310" r="32" fill="#00f5ff" opacity="0.18" filter="url(#bigGlow)"/>
+  <image href="data:image/jpeg;base64,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" x="257" y="445" width="486" height="600" preserveAspectRatio="xMidYMid meet"/>
+  <rect x="190" y="900" width="620" height="86" rx="18" fill="rgba(0,0,0,.64)" stroke="#00f5ff" stroke-opacity=".46" stroke-width="2"/>
+  <text x="500" y="943" text-anchor="middle" class="btnText" filter="url(#glow)">CLICK THE EGG</text>
+  <text x="500" y="974" text-anchor="middle" class="small" font-size="14" fill="#9feaff">LOAD AURORA LOGISTICAL ECO HOLDINGS GATE</text>
 
-  <path d="M318 36H691L730 74V150L691 186H318L279 150V74L318 36Z" fill="#0a0d12" stroke="url(#frameGrad)" stroke-width="4"/>
+  <text x="500" y="1148" text-anchor="middle" style="font-family:Arial,Helvetica,sans-serif;font-size:54px;font-weight:950;letter-spacing:4px;fill:#fff" filter="url(#glow)">COMING SOON TO</text>
+  <text x="500" y="1212" text-anchor="middle" style="font-family:Arial,Helvetica,sans-serif;font-size:54px;font-weight:950;letter-spacing:4px;fill:#fff" filter="url(#glow)">BLOCKCHAIN</text>
 
-  <text x="500" y="92" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 800; letter-spacing: 3px; fill: #FFE600;">
-    ALEH GATE
-  </text>
-
-  <text x="500" y="132" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 800; letter-spacing: 5px; fill: #DDFDFF;">
-    DRAGON EGG ENTRY NODE
-  </text>
-
-  <text x="72" y="115" class="small" fill="#FF455A">2026</text>
-  <text x="938" y="115" class="small" text-anchor="end" fill="#00F5FF">2026</text>
-
-  <text transform="translate(62 268) rotate(90)" class="small" fill="#FF2BD6">README // VIRTUAL // EMULATOR</text>
-  <text transform="translate(950 280) rotate(90)" class="small" fill="#A8FF00">CLICK // EGG // LOAD // ALEH</text>
-
-  <text x="500" y="285" text-anchor="middle"
-        style="font-family: Impact, Arial Black, Arial, sans-serif; font-size: 96px; font-weight: 900; letter-spacing: 2px; fill: url(#titleGrad);"
-        filter="url(#softGlow)">
-    DRAGON EGG
-  </text>
-
-  <text x="500" y="345" text-anchor="middle"
-        style="font-family: Arial, Helvetica, sans-serif; font-size: 38px; font-weight: 900; letter-spacing: 10px; fill: #A8FF00;">
-    CLICK TO ENTER
-  </text>
-
-  <path d="M122 403H878L925 450V835L878 882H203L122 801V403Z" fill="#D9D9D9" fill-opacity="0.08" stroke="url(#frameGrad)" stroke-width="5"/>
-  <path d="M142 421H858L903 464V814L860 857H212L142 787V421Z" fill="url(#bgGlow)" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
-
-  <g clip-path="url(#mainWindowClip)">
-    <rect x="142" y="421" width="761" height="436" fill="#02060b"/>
-    <rect x="142" y="421" width="761" height="436" fill="url(#coreGlow)"/>
-
-    <ellipse cx="500" cy="625" rx="265" ry="92" fill="#00F5FF" opacity="0.08" filter="url(#bigGlow)"/>
-    <ellipse class="pulseRing" cx="500" cy="625" rx="242" ry="242" fill="none" stroke="#00F5FF" stroke-width="3" opacity="0.55"/>
-    <ellipse class="pulseRing" cx="500" cy="625" rx="190" ry="190" fill="none" stroke="#FF2BD6" stroke-width="2" opacity="0.45"/>
-    <ellipse class="pulseRing" cx="500" cy="625" rx="145" ry="145" fill="none" stroke="#FFE600" stroke-width="2" opacity="0.38"/>
-
-    <g class="spinEgg">
-      <image
-        href="https://raw.githubusercontent.com/AOL83/AOL83/main/assets/meshy-dragon-egg.png"
-        x="310"
-        y="455"
-        width="380"
-        height="340"
-        preserveAspectRatio="xMidYMid meet"
-        opacity="0.98"
-      />
-    </g>
-
-    <rect class="scanBeam" x="180" y="460" width="640" height="42" fill="#00F5FF" opacity="0.18"/>
-    <rect x="160" y="438" width="680" height="348" rx="18" fill="none" stroke="#9eeeff" stroke-opacity="0.55" stroke-width="2"/>
-
-    <rect x="190" y="690" width="620" height="86" rx="18" fill="rgba(0,0,0,0.62)" stroke="rgba(0,245,255,0.42)" stroke-width="2"/>
-    <text x="500" y="730" text-anchor="middle" class="windowText" filter="url(#softGlow)">CLICK THE EGG</text>
-    <text x="500" y="760" text-anchor="middle" class="windowSub">LOAD AURORA LOGISTICAL ECO HOLDINGS GATE</text>
-  </g>
-
-  <text x="500" y="835" text-anchor="middle" class="tiny">README display emulator: static-safe SVG animation. Runtime opens through ALEH gate.</text>
-
-  <circle cx="72" cy="682" r="20" fill="#FF2B6E"/>
-  <path d="M72 655C80 666 85 674 85 682C85 691 79 699 72 699C65 699 59 691 59 682C59 674 64 666 72 655Z" fill="#14030B"/>
-
-  <circle cx="72" cy="780" r="20" fill="#FF2B6E"/>
-  <path d="M62 792C66 780 74 772 83 768C80 773 79 778 79 782C79 790 73 796 66 796H62V792Z" fill="#14030B"/>
-
-  <circle cx="928" cy="780" r="20" fill="#A8FF00"/>
-  <circle cx="928" cy="780" r="11" fill="#0B1203" stroke="#A8FF00"/>
-
-  <path d="M120 932H810L846 968V1004L810 1040H120L84 1004V968L120 932Z" fill="#090A11" stroke="#FF2B6E" stroke-width="4"/>
-  <text x="155" y="992" class="barLabel">README VISUAL</text>
-  <rect x="650" y="953" width="160" height="66" rx="10" fill="#0D0E13" stroke="#FF2B6E" stroke-width="3"/>
-  <text x="730" y="995" text-anchor="middle" class="value">SVG</text>
-
-  <path d="M120 1048H810L846 1084V1120L810 1156H120L84 1120V1084L120 1048Z" fill="#090A11" stroke="#FFE600" stroke-width="4"/>
-  <text x="155" y="1108" class="barLabel">EGG EMULATOR</text>
-  <rect x="650" y="1069" width="160" height="66" rx="10" fill="#0D0E13" stroke="#FFE600" stroke-width="3"/>
-  <text x="730" y="1111" text-anchor="middle" class="value">SPIN</text>
-
-  <path d="M120 1164H810L846 1200V1236L810 1272H120L84 1236V1200L120 1164Z" fill="#090A11" stroke="#FF2BD6" stroke-width="4"/>
-  <text x="155" y="1224" class="barLabel">ALEH GATE</text>
-  <rect x="650" y="1185" width="160" height="66" rx="10" fill="#0D0E13" stroke="#FF2BD6" stroke-width="3"/>
-  <text x="730" y="1227" text-anchor="middle" class="value">OPEN</text>
-
-  <rect x="130" y="1330" width="740" height="38" rx="12" fill="#05070D" stroke="url(#frameGrad)" stroke-width="2"/>
-  <text x="500" y="1355" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 800; letter-spacing: 4px; fill: url(#frameGrad);">
-    SEE THE EGG. CLICK THE EGG. LOAD THE GATE.
-  </text>
+  <path d="M120 1270H810L846 1306V1342L810 1378H120L84 1342V1306L120 1270Z" fill="#090A11" stroke="#ff2bd6" stroke-width="4"/>
+  <text x="155" y="1331" class="btnText">ALEH GATE</text>
+  <rect x="650" y="1291" width="160" height="66" rx="10" fill="#0D0E13" stroke="#ff2bd6" stroke-width="3"/>
+  <text x="730" y="1334" text-anchor="middle" class="btnText">OPEN</text>
 </svg>
