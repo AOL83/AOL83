@@ -19,7 +19,7 @@
 <p align="center">
   <a href="https://aol83.github.io/auroralogisticalecoholdings/?launch=true">
     <img
-      src="./assets/dragon-egg-window.svg"
+      src="./assets/dragon-egg-window.svg?v=dragon-egg-real-screen-20260505"
       alt="Aurora Logistical Eco Holdings kibernetinis README įėjimo langas"
       width="760"
     />
