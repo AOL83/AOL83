@@ -13,161 +13,32 @@ permissions:
 jobs:
   update-preview:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout profile repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install Playwright Chromium
+      - name: Replace README card cache reference
         run: |
-          npm init -y
-          npm install playwright
-          npx playwright install --with-deps chromium
+          python3 - <<'PY'
+          from pathlib import Path
+          version = 'dragon-egg-real-screen-20260505'
+          for file_name in ('README.md', 'README.lt.md'):
+              path = Path(file_name)
+              text = path.read_text()
+              text = text.replace('./assets/dragon-egg-window.svg?v=real-dragon-egg-20260505', './assets/dragon-egg-window.svg')
+              text = text.replace('./assets/dragon-egg-window.svg?v=dragon-egg-real-screen-20260505', './assets/dragon-egg-window.svg')
+              text = text.replace('./assets/dragon-egg-window.svg', f'./assets/dragon-egg-window.svg?v={version}')
+              path.write_text(text)
+          PY
 
-      - name: Capture real Dragon Egg from live page
-        run: |
-          mkdir -p assets
-          cat > capture-egg.js <<'EOF'
-          const { chromium } = require('playwright');
-
-          (async () => {
-            const browser = await chromium.launch({ args: ['--use-gl=swiftshader'] });
-            const page = await browser.newPage({ viewport: { width: 900, height: 1200 }, deviceScaleFactor: 2 });
-            await page.goto('https://aol83.github.io/auroralogisticalecoholdings/?v=readme-egg-capture', { waitUntil: 'networkidle', timeout: 120000 });
-            await page.waitForSelector('model-viewer', { timeout: 120000 });
-            await page.waitForTimeout(9000);
-            const egg = page.locator('model-viewer').first();
-            await egg.screenshot({ path: 'assets/meshy-dragon-egg.png', omitBackground: true });
-            await browser.close();
-          })();
-          EOF
-          node capture-egg.js
-
-      - name: Restore README card and point it at real egg image
-        run: |
-          cat > assets/dragon-egg-window.svg <<'EOF'
-          <svg width="1000" height="1414" viewBox="0 0 1000 1414" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="bgGlow" x1="0" y1="0" x2="1000" y2="1414" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#050510"/>
-                <stop offset="0.35" stop-color="#090615"/>
-                <stop offset="0.7" stop-color="#040816"/>
-                <stop offset="1" stop-color="#0B0B0E"/>
-              </linearGradient>
-              <linearGradient id="frameGrad" x1="30" y1="30" x2="970" y2="1384" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#FF2B6E"/>
-                <stop offset="0.24" stop-color="#FF2BD6"/>
-                <stop offset="0.50" stop-color="#FFE600"/>
-                <stop offset="0.72" stop-color="#00F5FF"/>
-                <stop offset="1" stop-color="#7CFF00"/>
-              </linearGradient>
-              <linearGradient id="titleGrad" x1="180" y1="120" x2="820" y2="320" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#FF315D"/>
-                <stop offset="0.28" stop-color="#FF2BD6"/>
-                <stop offset="0.60" stop-color="#8B5CFF"/>
-                <stop offset="1" stop-color="#00D9FF"/>
-              </linearGradient>
-              <radialGradient id="coreGlow" cx="50%" cy="48%" r="50%">
-                <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.38"/>
-                <stop offset="45%" stop-color="#FF2BD6" stop-opacity="0.14"/>
-                <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
-              </radialGradient>
-              <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur stdDeviation="7" result="blur"/>
-                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-              </filter>
-              <filter id="bigGlow" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur stdDeviation="14" result="blur"/>
-                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-              </filter>
-              <clipPath id="mainWindowClip">
-                <path d="M142 421H858L903 464V814L860 857H212L142 787V421Z"/>
-              </clipPath>
-              <style>
-                .small{font-family:Arial,Helvetica,sans-serif;font-size:18px;letter-spacing:4px;fill:#d9f7ff}
-                .windowText{font-family:Arial,Helvetica,sans-serif;font-size:34px;font-weight:900;letter-spacing:4px;fill:#e8fbff}
-                .windowSub{font-family:Arial,Helvetica,sans-serif;font-size:16px;letter-spacing:3px;fill:#9feaff}
-                .tiny{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;fill:#b7faff}
-                .barLabel{font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:800;letter-spacing:2px;fill:#f5fbff}
-                .value{font-family:Arial,Helvetica,sans-serif;font-size:25px;font-weight:800;letter-spacing:2px;fill:#dffcff}
-                .spinEgg{transform-box:fill-box;transform-origin:center;animation:eggSpin 10s ease-in-out infinite}
-                .pulseRing{transform-box:fill-box;transform-origin:center;animation:ringPulse 3.2s ease-in-out infinite}
-                .scanBeam{animation:scanMove 4.2s ease-in-out infinite}
-                @keyframes eggSpin{0%,100%{transform:translateY(0) scale(1);opacity:.98}50%{transform:translateY(-10px) scale(1.03);opacity:1}}
-                @keyframes ringPulse{0%,100%{opacity:.35;transform:scale(.96)}50%{opacity:.95;transform:scale(1.06)}}
-                @keyframes scanMove{0%{transform:translateY(-260px);opacity:0}22%{opacity:.55}55%{opacity:.2}100%{transform:translateY(260px);opacity:0}}
-              </style>
-            </defs>
-            <rect x="0" y="0" width="1000" height="1414" rx="28" fill="url(#bgGlow)"/>
-            <rect x="12" y="12" width="976" height="1390" rx="28" stroke="url(#frameGrad)" stroke-width="8" opacity="0.94"/>
-            <rect x="24" y="24" width="952" height="1366" rx="24" stroke="rgba(255,255,255,0.22)" stroke-width="2"/>
-            <circle cx="90" cy="90" r="34" fill="#ff2b6e" opacity="0.28" filter="url(#bigGlow)"/>
-            <circle cx="920" cy="104" r="34" fill="#a8ff00" opacity="0.24" filter="url(#bigGlow)"/>
-            <circle cx="900" cy="1310" r="32" fill="#00f5ff" opacity="0.18" filter="url(#bigGlow)"/>
-            <path d="M318 36H691L730 74V150L691 186H318L279 150V74L318 36Z" fill="#0a0d12" stroke="url(#frameGrad)" stroke-width="4"/>
-            <text x="500" y="92" text-anchor="middle" style="font-family:Arial,Helvetica,sans-serif;font-size:28px;font-weight:800;letter-spacing:3px;fill:#FFE600">ALEH GATE</text>
-            <text x="500" y="132" text-anchor="middle" style="font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:800;letter-spacing:5px;fill:#DDFDFF">DRAGON EGG ENTRY NODE</text>
-            <text x="72" y="115" class="small" fill="#FF455A">2026</text>
-            <text x="938" y="115" class="small" text-anchor="end" fill="#00F5FF">2026</text>
-            <text transform="translate(62 268) rotate(90)" class="small" fill="#FF2BD6">README // VIRTUAL // EMULATOR</text>
-            <text transform="translate(950 280) rotate(90)" class="small" fill="#A8FF00">CLICK // EGG // LOAD // ALEH</text>
-            <text x="500" y="285" text-anchor="middle" style="font-family:Impact,Arial Black,Arial,sans-serif;font-size:96px;font-weight:900;letter-spacing:2px;fill:url(#titleGrad)" filter="url(#softGlow)">DRAGON EGG</text>
-            <text x="500" y="345" text-anchor="middle" style="font-family:Arial,Helvetica,sans-serif;font-size:38px;font-weight:900;letter-spacing:10px;fill:#A8FF00">CLICK TO ENTER</text>
-            <path d="M122 403H878L925 450V835L878 882H203L122 801V403Z" fill="#D9D9D9" fill-opacity="0.08" stroke="url(#frameGrad)" stroke-width="5"/>
-            <path d="M142 421H858L903 464V814L860 857H212L142 787V421Z" fill="url(#bgGlow)" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
-            <g clip-path="url(#mainWindowClip)">
-              <rect x="142" y="421" width="761" height="436" fill="#02060b"/>
-              <rect x="142" y="421" width="761" height="436" fill="url(#coreGlow)"/>
-              <ellipse cx="500" cy="625" rx="265" ry="92" fill="#00F5FF" opacity="0.08" filter="url(#bigGlow)"/>
-              <ellipse class="pulseRing" cx="500" cy="625" rx="242" ry="242" fill="none" stroke="#00F5FF" stroke-width="3" opacity="0.55"/>
-              <ellipse class="pulseRing" cx="500" cy="625" rx="190" ry="190" fill="none" stroke="#FF2BD6" stroke-width="2" opacity="0.45"/>
-              <ellipse class="pulseRing" cx="500" cy="625" rx="145" ry="145" fill="none" stroke="#FFE600" stroke-width="2" opacity="0.38"/>
-              <g class="spinEgg">
-                <image href="https://raw.githubusercontent.com/AOL83/AOL83/main/assets/meshy-dragon-egg.png?v=real-egg-1" x="245" y="430" width="510" height="410" preserveAspectRatio="xMidYMid meet" opacity="0.98"/>
-              </g>
-              <rect class="scanBeam" x="180" y="460" width="640" height="42" fill="#00F5FF" opacity="0.18"/>
-              <rect x="160" y="438" width="680" height="348" rx="18" fill="none" stroke="#9eeeff" stroke-opacity="0.55" stroke-width="2"/>
-              <rect x="190" y="690" width="620" height="86" rx="18" fill="rgba(0,0,0,0.62)" stroke="rgba(0,245,255,0.42)" stroke-width="2"/>
-              <text x="500" y="730" text-anchor="middle" class="windowText" filter="url(#softGlow)">CLICK THE EGG</text>
-              <text x="500" y="760" text-anchor="middle" class="windowSub">LOAD AURORA LOGISTICAL ECO HOLDINGS GATE</text>
-            </g>
-            <text x="500" y="835" text-anchor="middle" class="tiny">README display emulator: static-safe SVG animation. Runtime opens through ALEH gate.</text>
-            <circle cx="72" cy="682" r="20" fill="#FF2B6E"/>
-            <path d="M72 655C80 666 85 674 85 682C85 691 79 699 72 699C65 699 59 691 59 682C59 674 64 666 72 655Z" fill="#14030B"/>
-            <circle cx="72" cy="780" r="20" fill="#FF2B6E"/>
-            <path d="M62 792C66 780 74 772 83 768C80 773 79 778 79 782C79 790 73 796 66 796H62V792Z" fill="#14030B"/>
-            <circle cx="928" cy="780" r="20" fill="#A8FF00"/>
-            <circle cx="928" cy="780" r="11" fill="#0B1203" stroke="#A8FF00"/>
-            <path d="M120 932H810L846 968V1004L810 1040H120L84 1004V968L120 932Z" fill="#090A11" stroke="#FF2B6E" stroke-width="4"/>
-            <text x="155" y="992" class="barLabel">README VISUAL</text>
-            <rect x="650" y="953" width="160" height="66" rx="10" fill="#0D0E13" stroke="#FF2B6E" stroke-width="3"/>
-            <text x="730" y="995" text-anchor="middle" class="value">SVG</text>
-            <path d="M120 1048H810L846 1084V1120L810 1156H120L84 1120V1084L120 1048Z" fill="#090A11" stroke="#FFE600" stroke-width="4"/>
-            <text x="155" y="1108" class="barLabel">EGG EMULATOR</text>
-            <rect x="650" y="1069" width="160" height="66" rx="10" fill="#0D0E13" stroke="#FFE600" stroke-width="3"/>
-            <text x="730" y="1111" text-anchor="middle" class="value">SPIN</text>
-            <path d="M120 1164H810L846 1200V1236L810 1272H120L84 1236V1200L120 1164Z" fill="#090A11" stroke="#FF2BD6" stroke-width="4"/>
-            <text x="155" y="1224" class="barLabel">ALEH GATE</text>
-            <rect x="650" y="1185" width="160" height="66" rx="10" fill="#0D0E13" stroke="#FF2BD6" stroke-width="3"/>
-            <text x="730" y="1227" text-anchor="middle" class="value">OPEN</text>
-            <rect x="130" y="1330" width="740" height="38" rx="12" fill="#05070D" stroke="url(#frameGrad)" stroke-width="2"/>
-            <text x="500" y="1355" text-anchor="middle" style="font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:800;letter-spacing:4px;fill:url(#frameGrad)">SEE THE EGG. CLICK THE EGG. LOAD THE GATE.</text>
-          </svg>
-          EOF
-
-      - name: Commit README egg preview
+      - name: Commit README card refresh
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add assets/meshy-dragon-egg.png assets/dragon-egg-window.svg
+          git add README.md README.lt.md
           if git diff --cached --quiet; then
-            echo "No README preview changes to commit."
+            echo "README card references already refreshed."
           else
-            git commit -m "Replace README vector egg with real Dragon Egg preview"
+            git commit -m "Refresh README Dragon Egg card references"
             git push
           fi
