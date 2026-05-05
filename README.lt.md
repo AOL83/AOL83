@@ -10,14 +10,16 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:050510,30:00ff85,65:ffe600,100:ff355e&text=Terence%20Lewis&fontColor=ffffff&fontSize=54&fontAlignY=38&desc=Saugumui%20orientuotas%20sistem%C5%B3%20in%C5%BEinierius%20%E2%80%A2%20Gedimams%20atsparus%20projektavimas%20%E2%80%A2%20Produkcija%20vir%C5%A1%20teorijos%20%E2%80%A2%20T%C4%99stinumas%20vir%C5%A1%20patogumo&descAlignY=58&descSize=20&animation=fadeIn" alt="Terence Lewis lietuviškas cyberpunk profilio baneris" width="100%" />
 </p>
 
+<div align="center">
+  <iframe src="https://raw.githack.com/AOL83/AOL83/main/assets/aurora-dragon-egg-interactive-card.html" width="760" height="1080" frameborder="0" title="Interaktyvi Aurora Dragon Egg kortelė"></iframe>
+</div>
+
 <p align="center">
-  <a href="https://aol83.github.io/auroralogisticalecoholdings/?launch=true">
-    <img src="https://img.shields.io/badge/ATIDARYTI-AURORA%20DRAGON%20EGG%20ENTRY-00ff85?style=for-the-badge&logo=githubpages&logoColor=050510" alt="Atidaryti Aurora Dragon Egg Entry" />
-  </a>
+  <a href="https://raw.githack.com/AOL83/AOL83/main/assets/aurora-dragon-egg-interactive-card.html"><strong>Atidaryti interaktyvią Aurora Dragon Egg kortelę</strong></a>
 </p>
 
 <p align="center">
-  <a href="https://aol83.github.io/auroralogisticalecoholdings/?launch=true"><strong>Atidaryti veikiančią Aurora Dragon Egg įėjimo svetainę</strong></a>
+  <a href="https://aol83.github.io/auroralogisticalecoholdings/?launch=true"><strong>Atidaryti pilną Aurora Dragon Egg vartų puslapį</strong></a>
 </p>
 
 <p align="center">

@@ -10,14 +10,16 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:050510,30:00f5ff,65:ff2bd6,100:f9f871&text=Terence%20Lewis&fontColor=ffffff&fontSize=54&fontAlignY=38&desc=Safety-first%20systems%20engineer%20%E2%80%A2%20Failure-aware%20design%20%E2%80%A2%20Production%20over%20theory%20%E2%80%A2%20Continuity%20over%20convenience&descAlignY=58&descSize=20&animation=fadeIn" alt="Terence Lewis cyberpunk profile banner" width="100%" />
 </p>
 
+<div align="center">
+  <iframe src="https://raw.githack.com/AOL83/AOL83/main/assets/aurora-dragon-egg-interactive-card.html" width="760" height="1080" frameborder="0" title="Interactive Aurora Dragon Egg card"></iframe>
+</div>
+
 <p align="center">
-  <a href="https://aol83.github.io/auroralogisticalecoholdings/?launch=true">
-    <img src="./assets/readme-real-dragon-egg.jpg?v=actual-gate-egg-20260505" alt="Aurora Dragon Egg working gate entry card" width="760" />
-  </a>
+  <a href="https://raw.githack.com/AOL83/AOL83/main/assets/aurora-dragon-egg-interactive-card.html"><strong>Open the interactive Aurora Dragon Egg card</strong></a>
 </p>
 
 <p align="center">
-  <a href="https://aol83.github.io/auroralogisticalecoholdings/?launch=true"><strong>Open the working Aurora Dragon Egg gate</strong></a>
+  <a href="https://aol83.github.io/auroralogisticalecoholdings/?launch=true"><strong>Open the full Aurora Dragon Egg gate</strong></a>
 </p>
 
 <p align="center">
