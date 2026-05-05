@@ -1,0 +1,51 @@
+name: README TV GIF
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install pillow
+      - run: |
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image, ImageEnhance, ImageDraw, ImageFilter
+
+          source = Path('assets/readme-real-dragon-egg.jpg')
+          img = Image.open(source).convert('RGB')
+          width = 760
+          height = int(img.height * (width / img.width))
+          base = img.resize((width, height), Image.LANCZOS)
+
+          frames = []
+          for i in range(16):
+              frame = base.copy().convert('RGBA')
+              frame = ImageEnhance.Contrast(frame).enhance(1.05)
+              frame = ImageEnhance.Color(frame).enhance(1.05)
+              overlay = Image.new('RGBA', frame.size, (0, 0, 0, 0))
+              draw = ImageDraw.Draw(overlay)
+              y = int(height * 0.31 + (height * 0.20) * (i / 15))
+              draw.rounded_rectangle((int(width*0.08), y, int(width*0.92), y + 18), radius=9, fill=(0, 245, 255, 80))
+              overlay = overlay.filter(ImageFilter.GaussianBlur(1.2))
+              frame = Image.alpha_composite(frame, overlay).convert('P', palette=Image.ADAPTIVE, colors=128)
+              frames.append(frame)
+
+          out = Path('assets/readme-dragon-egg-tv.gif')
+          frames[0].save(out, save_all=True, append_images=frames[1:], duration=95, loop=0, optimize=True)
+          print(out, out.stat().st_size)
+          PY
+      - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add assets/readme-dragon-egg-tv.gif
+          git commit -m "Build README Dragon Egg TV GIF" || true
+          git push
