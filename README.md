@@ -12,12 +12,12 @@
 
 <p align="center">
   <a href="https://aol83.github.io/auroralogisticalecoholdings/?launch=true">
-    <img src="https://img.shields.io/badge/OPEN-AURORA%20DRAGON%20EGG%20ENTRY-00f5ff?style=for-the-badge&logo=githubpages&logoColor=050510" alt="Open Aurora Dragon Egg Entry" />
+    <img src="./assets/readme-real-dragon-egg.jpg?v=actual-gate-egg-20260505" alt="Aurora Dragon Egg working gate entry card" width="760" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://aol83.github.io/auroralogisticalecoholdings/?launch=true"><strong>Open the live Aurora Dragon Egg entry page</strong></a>
+  <a href="https://aol83.github.io/auroralogisticalecoholdings/?launch=true"><strong>Open the working Aurora Dragon Egg gate</strong></a>
 </p>
 
 <p align="center">
