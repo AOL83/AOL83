@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aurora Lock and Gate</title>
+  <style>
+    *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#03050c;color:#f5fbff;font-family:Arial,Helvetica,sans-serif}body{display:grid;place-items:center;padding:20px}.shell{width:min(760px,100%);border-radius:34px;padding:clamp(18px,5vw,46px);background:radial-gradient(circle at 10% 0,rgba(255,43,214,.24),transparent 34%),linear-gradient(160deg,#050510,#071220);border:4px solid #ff2bd6;box-shadow:0 0 34px rgba(0,245,255,.28)}h1{font-size:clamp(48px,10vw,88px);line-height:.9;margin:0 0 24px}p{font-size:clamp(20px,4vw,34px);line-height:1.45;color:#dce8ff}.field{margin:24px 0}label{display:block;color:#eaff38;font-weight:900;letter-spacing:5px;font-size:clamp(18px,3vw,28px);margin-bottom:12px}input,select{width:100%;border:3px solid #00f5ff;border-radius:28px;background:#03050c;color:#f5fbff;padding:22px 28px;font-size:clamp(20px,4vw,34px)}button,a.button{width:100%;display:block;text-align:center;margin-top:22px;border:3px solid #00f5ff;border-radius:32px;background:#050510;color:#f5fbff;padding:24px;font-size:clamp(22px,4vw,36px);font-weight:900;text-decoration:none}button.primary{background:linear-gradient(90deg,#eaff38,#54ff7c);color:#050510;border:none}.status{margin-top:24px;border:2px solid rgba(234,255,56,.35);border-radius:22px;padding:18px;font-family:monospace;font-size:18px;color:#f5fbff;background:#02040a}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <h1>Lock and Gate</h1>
+    <p>Enter visitor information. When the inputs are confirmed, the Aurora Logistical Eco Holdings website opens.</p>
+    <form id="gateForm">
+      <div class="field"><label for="name">NAME</label><input id="name" name="name" autocomplete="name" required placeholder="Enter your name"></div>
+      <div class="field"><label for="email">EMAIL</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="name@example.com"></div>
+      <div class="field"><label for="reason">REASON FOR ENTRY</label><select id="reason" name="reason"><option>General access</option><option>Partnerships</option><option>Logistics</option><option>Systems</option></select></div>
+      <div class="field"><label for="phrase">ACCESS PHRASE</label><input id="phrase" name="phrase" type="password" required placeholder="Enter: aurora"></div>
+      <button class="primary" type="submit">Confirm and Open Website</button>
+    </form>
+    <a class="button" href="./index.html">Back to Dragon Egg</a>
+    <div class="status" id="status">Gate ready. Entry card loaded first.</div>
+  </main>
+  <script>
+    const form = document.getElementById('gateForm');
+    const status = document.getElementById('status');
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = Object.fromEntries(new FormData(form).entries());
+      if ((data.phrase || '').trim().toLowerCase() !== 'aurora') {
+        status.textContent = 'Access phrase rejected. Gate remains locked.';
+        return;
+      }
+      sessionStorage.setItem('auroraGatePass', JSON.stringify({ name:data.name, email:data.email, reason:data.reason, passedAt:new Date().toISOString() }));
+      status.textContent = 'Entry confirmed. Opening Aurora Logistical Eco Holdings website.';
+      window.location.href = './aurora-logistical-eco-holdings.html';
+    });
+  </script>
+</body>
+</html>
