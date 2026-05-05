@@ -16,15 +16,15 @@
 </p>
 
 <!-- KIBERNETINIS LANGINIS ĮĖJIMO TAŠKAS -->
-<p align="center">
-  <a href="https://aol83.github.io/auroralogisticalecoholdings/?launch=true">
-    <img
-      src="./assets/dragon-egg-window.svg"
-      alt="Aurora Logistical Eco Holdings kibernetinis README įėjimo langas"
-      width="760"
-    />
-  </a>
-</p>
+<div align="center">
+  <iframe
+    src="./assets/aurora-dragon-egg-interactive-card.html"
+    width="760"
+    height="1080"
+    frameborder="0"
+    title="Aktyvi Aurora Dragon Egg 3D įėjimo kortelė"
+  ></iframe>
+</div>
 
 <!-- PAGRINDINIAI PALEIDIMO MYGTUKAI -->
 <p align="center">
