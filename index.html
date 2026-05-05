@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terence Lewis | Aurora Dragon Egg Entry</title>
+  <script type="module" src="./assets/vendor/model-viewer.min.js"></script>
+  <style>
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;background:#03050c;color:#f5fbff;font-family:Arial,Helvetica,sans-serif}
+    body{padding:22px;display:flex;justify-content:center}
+    .page{width:min(1120px,100%)}
+    .lang{margin:0 0 16px;text-align:center;font-weight:800}
+    .lang a{color:#f5fbff;text-decoration:none;margin:0 8px}
+    .banner{height:220px;border-radius:0 0 36px 36px;overflow:hidden;display:grid;place-items:center;text-align:center;background:linear-gradient(135deg,#050510 0%,#00f5ff 30%,#ff2bd6 65%,#f9f871 100%);box-shadow:0 0 32px rgba(0,245,255,.2)}
+    .banner h1{font-size:clamp(38px,7vw,72px);margin:0;color:#fff;text-shadow:0 0 18px rgba(0,0,0,.55)}
+    .banner p{font-size:clamp(14px,2vw,22px);font-weight:800;margin:12px 20px 0;color:#fff;text-shadow:0 0 12px rgba(0,0,0,.65)}
+    .entry-wrap{display:grid;place-items:center;padding:34px 0 26px}
+    .card{width:min(760px,100%);aspect-ratio:1000/1414;position:relative;overflow:hidden;border-radius:34px;background:radial-gradient(circle at 50% 45%,rgba(0,245,255,.18),transparent 38%),linear-gradient(160deg,#050510,#080615 44%,#030812);box-shadow:0 0 34px rgba(0,245,255,.22),inset 0 0 0 2px rgba(255,255,255,.14)}
+    .card:before{content:"";position:absolute;inset:0;border-radius:28px;padding:7px;background:linear-gradient(135deg,#ff305f,#ff2bd6,#eaff38,#00f5ff,#7cff00);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+    .year{position:absolute;top:52px;font-weight:900;letter-spacing:6px;color:#ff305f;font-size:30px}.left{left:46px}.right{right:46px}
+    .badge{position:absolute;top:38px;left:50%;transform:translateX(-50%);width:54%;min-height:92px;border-radius:90px;border:3px solid rgba(234,255,56,.35);display:grid;place-items:center;text-align:center;background:rgba(6,8,16,.82)}
+    .badge b{display:block;color:#eaff38;font-size:clamp(34px,5vw,58px);letter-spacing:7px;line-height:.95}.badge span{display:block;font-size:clamp(12px,2vw,22px);letter-spacing:5px;margin-top:9px;font-weight:800}
+    .title{position:absolute;left:7%;right:7%;top:198px;text-align:center;font-family:Impact,Arial Black,Arial,sans-serif;font-weight:900;line-height:.88;font-size:clamp(76px,11vw,126px);letter-spacing:2px;background:linear-gradient(90deg,#ff164f,#ff2bd6,#8b5cff,#208cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .subtitle{position:absolute;left:0;right:0;top:382px;text-align:center;color:#eaff38;letter-spacing:14px;font-size:clamp(26px,4vw,42px);font-weight:900}
+    .screen{position:absolute;left:7%;right:7%;top:522px;height:47%;border-radius:42px;border:3px solid rgba(0,245,255,.55);background:radial-gradient(circle at 50% 55%,rgba(0,245,255,.12),rgba(29,52,44,.72) 55%,rgba(8,17,25,.9));overflow:hidden}
+    model-viewer{width:100%;height:100%;--poster-color:transparent;background:transparent}
+    .band{position:absolute;left:18%;right:18%;bottom:36%;min-height:64px;border:2px solid rgba(0,245,255,.55);border-radius:14px;background:rgba(0,0,0,.68);display:grid;place-items:center;text-align:center;pointer-events:none}.band strong{display:block;letter-spacing:3px;font-size:clamp(18px,3vw,28px)}.band span{display:block;letter-spacing:4px;font-size:12px;margin-top:6px}
+    .coming{position:absolute;left:7%;right:7%;bottom:152px;text-align:center;font-weight:950;font-size:clamp(38px,7vw,68px);letter-spacing:4px;line-height:1.15}.open{position:absolute;left:13%;right:13%;bottom:50px;height:74px;border:4px solid #ff2bd6;display:flex;align-items:center;justify-content:space-between;padding:0 32px;background:rgba(8,8,14,.78)}.open span{font-size:clamp(18px,3vw,26px);font-weight:900;letter-spacing:3px}.btn{border:3px solid #ff2bd6;border-radius:10px;padding:14px 26px;font-weight:900;letter-spacing:2px}.gate{position:absolute;inset:0;z-index:5;color:transparent;text-decoration:none}
+    .buttons{text-align:center;margin:10px 0 30px}.buttons a{display:inline-block;margin:7px;padding:13px 18px;border-radius:999px;background:#071018;border:2px solid #00f5ff;color:#f5fbff;text-decoration:none;font-weight:900;letter-spacing:.6px}.buttons a:nth-child(2){border-color:#ff6719}.buttons a:nth-child(3){border-color:#ff2bd6}
+    .typing{text-align:center;font-size:clamp(18px,3vw,26px);font-weight:900;color:#00f5ff;margin:20px 0}.intro{text-align:center;font-weight:800}.content{max-width:900px;margin:34px auto;line-height:1.7}.content h2{color:#00f5ff}.content h3{color:#f9f871}.badges{text-align:center;margin:18px 0}.badges span{display:inline-block;margin:5px;padding:9px 12px;border-radius:999px;background:#111727;border:1px solid rgba(255,255,255,.2);font-weight:800}.footer{height:120px;margin-top:40px;border-radius:36px 36px 0 0;background:linear-gradient(135deg,#050510,#00f5ff,#ff2bd6,#f9f871)}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <p class="lang"><a href="README.md">🌍 English</a> | <a href="README.lt.md">🇱🇹 Lietuvių</a></p>
+
+    <section class="banner" aria-label="Terence Lewis cyberpunk profile banner">
+      <div>
+        <h1>Terence Lewis</h1>
+        <p>Safety-first systems engineer • Failure-aware design • Production over theory • Continuity over convenience</p>
+      </div>
+    </section>
+
+    <section class="entry-wrap" aria-label="Aurora Dragon Egg Entry Card">
+      <article class="card" aria-label="Aurora Dragon Egg Entry Gate">
+        <a class="gate" href="./assets/aurora-dragon-egg-interactive-card.html" aria-label="Open Aurora Dragon Egg operating shell"></a>
+        <div class="year left">2026</div><div class="year right">2026</div>
+        <div class="badge"><div><b>TERENCE OS</b><span>OPERATING SYSTEMS</span></div></div>
+        <div class="title">DRAGON<br>EGG</div><div class="subtitle">Character</div>
+        <section class="screen"><model-viewer src="./assets/dragon-egg.glb" camera-controls auto-rotate rotation-per-second="28deg" interaction-prompt="none" shadow-intensity="1" exposure="1.05" camera-orbit="0deg 76deg 2.7m" field-of-view="30deg" alt="3D animated Dragon Egg"></model-viewer><div class="band"><div><strong>CLICK THE EGG</strong><span>LOAD AURORA LOGISTICAL ECO HOLDINGS GATE</span></div></div></section>
+        <div class="coming">COMING SOON TO<br>BLOCKCHAIN</div><div class="open"><span>ALEH GATE</span><div class="btn">OPEN</div></div>
+      </article>
+    </section>
+
+    <nav class="buttons" aria-label="Primary launch buttons">
+      <a href="https://aol83.github.io/auroralogisticalecoholdings/?launch=true">LAUNCH AURORA SYSTEM</a>
+      <a href="https://waterfallslt.substack.com/">READ WaterFallsLT Substack</a>
+      <a href="https://github.com/AOL83/Code-Strategy-Solutions">CSS Code Strategy Solutions</a>
+    </nav>
+
+    <div class="typing">Safety-first systems engineer • Failure-aware design • Production over theory • Continuity over convenience</div>
+    <p class="intro"><strong>Safety-first systems engineer • Failure-aware design • Production over theory • Continuity over convenience</strong></p>
+    <p class="intro"><em>I design systems that fail safely, not silently.</em></p>
+
+    <div class="badges"><span>PROFILE VIEWS</span><span>London / International</span><span>Safety-First Systems</span></div>
+
+    <section class="content">
+      <h2>Terence Lewis</h2>
+      <p>📍 <strong>London, England • Remote / International</strong></p>
+      <h2>Personal Profile</h2>
+      <p>I design and build safety-first, failure-aware systems — not demos, tutorials, or throwaway prototypes.</p>
+      <p>My work focuses on real-world platforms where dropped connections, partial failures, stale commands, and human error are expected — not ignored.</p>
+      <p>I do not just make things work. I design how they fail, recover, and remain observable under stress.</p>
+      <h2>What I Do</h2>
+      <ul><li>Architect fault-tolerant, safety-first systems</li><li>Design control layers, authority models, and failure boundaries</li><li>Build full-stack platforms with real-world constraints</li><li>Create observable, debuggable, and replayable systems</li><li>Design for continuity, not ideal conditions</li></ul>
+      <h2>What I Currently Run</h2>
+      <ul><li><strong>Aurora Logistical Eco Holdings Limited</strong> — UK technology company building apps, websites, custom software, digital systems, and research infrastructure.</li><li><strong>Code Strategy Solutions</strong> — internal software strategy and study group.</li><li><strong>Bridge IT</strong> — learning and systems-development framework.</li><li><strong>WaterFallsLT</strong> — public research, writing, media identity, and technical publishing.</li></ul>
+      <h2>Flagship Platforms</h2>
+      <h3>CabinApp — Private Cabin Stay Platform</h3>
+      <p>A real operational hospitality system with booking, owner/admin dashboard, backend APIs, database logic, automation, and internal tools.</p>
+      <h3>Harness — Safety-First Control and Mesh Networking Platform</h3>
+      <p>A modular control platform designed around failure modes, authority separation, continuity-first networking, heartbeats, watchdogs, kill paths, safe-state degradation, and replayable command streams.</p>
+      <h2>Working Style</h2>
+      <p>Safety-first thinking • Failure-aware design • Systems over shortcuts • Continuity over convenience • Build for stress, not demos • Observable systems over silent failure.</p>
+    </section>
+    <div class="footer" aria-hidden="true"></div>
+  </main>
+</body>
+</html>
