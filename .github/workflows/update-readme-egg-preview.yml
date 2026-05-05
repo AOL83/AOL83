@@ -17,75 +17,93 @@ jobs:
       - name: Checkout profile repository
         uses: actions/checkout@v4
 
-      - name: Restore original README card and embed real egg inside TV screen
+      - name: Setup Node and Chromium
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Capture the live working Aurora Dragon Egg card
         run: |
           set -euo pipefail
+          npm init -y
+          npm install playwright
+          npx playwright install --with-deps chromium
+          mkdir -p assets
+          cat > capture-live-card.js <<'EOF'
+          const { chromium } = require('playwright');
+          (async () => {
+            const browser = await chromium.launch({ args: ['--use-gl=swiftshader', '--disable-dev-shm-usage'] });
+            const page = await browser.newPage({ viewport: { width: 900, height: 1600 }, deviceScaleFactor: 2 });
+            await page.goto('https://aol83.github.io/auroralogisticalecoholdings/?launch=true#entry', { waitUntil: 'networkidle', timeout: 120000 });
+            await page.waitForSelector('model-viewer', { timeout: 120000 });
+            await page.waitForTimeout(12000);
+            const card = page.locator('.card').first();
+            await card.screenshot({ path: 'assets/aurora-dragon-egg-entry-card.png' });
+            await browser.close();
+          })();
+          EOF
+          node capture-live-card.js
 
-          ORIGINAL_CARD_URL="https://raw.githubusercontent.com/AOL83/AOL83/db00bbb28f8b7ba6d292d89a68963811bd66ad50/assets/dragon-egg-window.svg"
-          curl -L "$ORIGINAL_CARD_URL" -o assets/dragon-egg-window.svg
-
-          if [ -f assets/readme-real-dragon-egg.jpg ]; then
-            EGG_FILE="assets/readme-real-dragon-egg.jpg"
-            MIME="image/jpeg"
-          elif [ -f assets/real-dragon-egg.jpg ]; then
-            EGG_FILE="assets/real-dragon-egg.jpg"
-            MIME="image/jpeg"
-          elif [ -f assets/meshy-dragon-egg.png ]; then
-            EGG_FILE="assets/meshy-dragon-egg.png"
-            MIME="image/png"
-          else
-            echo "No real egg preview image found in assets."
-            exit 1
-          fi
-
-          EGG_DATA="data:${MIME};base64,$(base64 -w 0 "$EGG_FILE")"
-
+      - name: Replace both README card blocks with live captured card
+        run: |
           python3 - <<'PY'
           from pathlib import Path
-          import os
+          import re
 
-          svg_path = Path('assets/dragon-egg-window.svg')
-          text = svg_path.read_text()
-          egg_data = os.environ['EGG_DATA']
+          live = 'https://aol83.github.io/auroralogisticalecoholdings/?launch=true'
+          card = './assets/aurora-dragon-egg-entry-card.png?v=live-card-20260505-1'
 
-          start = text.find('<image')
-          if start == -1:
-              raise SystemExit('No image element found in SVG card')
-          end = text.find('/>', start)
-          if end == -1:
-              raise SystemExit('Image element did not close with />')
+          blocks = {
+            'README.md': '''<!-- AURORA LIVE DRAGON EGG ENTRY CARD -->
+<p align="center">
+  <a href="https://aol83.github.io/auroralogisticalecoholdings/?launch=true">
+    <img src="./assets/aurora-dragon-egg-entry-card.png?v=live-card-20260505-1" alt="Live Aurora Dragon Egg entry gate card with 3D egg" width="760" />
+  </a>
+</p>''',
+            'README.lt.md': '''<!-- AURORA LIVE DRAGON EGG ENTRY CARD -->
+<p align="center">
+  <a href="https://aol83.github.io/auroralogisticalecoholdings/?launch=true">
+    <img src="./assets/aurora-dragon-egg-entry-card.png?v=live-card-20260505-1" alt="Veikianti Aurora Dragon Egg įėjimo kortelė su 3D kiaušiniu" width="760" />
+  </a>
+</p>'''
+          }
 
-          replacement = f'''<image
-        href="{egg_data}"
-        x="255"
-        y="420"
-        width="490"
-        height="430"
-        preserveAspectRatio="xMidYMid meet"
-        opacity="0.98"
-      />'''
-          text = text[:start] + replacement + text[end + 2:]
-          svg_path.write_text(text)
+          def replace_top_card(text, block):
+              # Remove the older SVG vector/card block if present.
+              text = re.sub(r'\n<!-- CYBERPUNK WINDOWED ENTRY POINT -->\s*<p align="center">\s*<a href="https://aol83\.github\.io/auroralogisticalecoholdings/\?launch=true">\s*<img\s+src="\.\/assets\/dragon-egg-window\.svg[^\"]*"[\s\S]*?</a>\s*</p>', '\n' + block, text, count=1)
+              text = re.sub(r'\n<!-- KIBERNETINIS LANGINIS ĮĖJIMO TAŠKAS -->\s*<p align="center">\s*<a href="https://aol83\.github\.io/auroralogisticalecoholdings/\?launch=true">\s*<img\s+src="\.\/assets\/dragon-egg-window\.svg[^\"]*"[\s\S]*?</a>\s*</p>', '\n' + block, text, count=1)
+              # Replace the temporary badge-only link block if present.
+              text = re.sub(r'\n<p align="center">\s*<a href="https://aol83\.github\.io/auroralogisticalecoholdings/\?launch=true">\s*<img src="https://img\.shields\.io/badge/(?:OPEN|ATIDARYTI)-AURORA%20DRAGON%20EGG%20ENTRY[^\"]*"[\s\S]*?</p>\s*\n\s*<p align="center">\s*<a href="https://aol83\.github\.io/auroralogisticalecoholdings/\?launch=true"><strong>[\s\S]*?</strong></a>\s*</p>', '\n' + block, text, count=1)
+              return text
 
-          version = 'embedded-real-dragon-egg-20260505'
-          for file_name in ('README.md', 'README.lt.md'):
-              path = Path(file_name)
-              md = path.read_text()
-              import re
-              md = re.sub(r'\.\/assets\/dragon-egg-window\.svg(?:\?v=[^"\s]+)?', f'./assets/dragon-egg-window.svg?v={version}', md)
-              path.write_text(md)
+          for name, block in blocks.items():
+              p = Path(name)
+              text = p.read_text()
+              text = replace_top_card(text, block)
+              if 'aurora-dragon-egg-entry-card.png' not in text:
+                  # Insert after the capsule banner if no previous block was found.
+                  idx = text.find('<!-- PRIMARY')
+                  if idx == -1:
+                      idx = text.find('<!-- PAGRINDINIAI')
+                  if idx != -1:
+                      text = text[:idx] + block + '\n\n' + text[idx:]
+                  else:
+                      text = block + '\n\n' + text
+              if 'dragon-egg-window.svg' in text:
+                  raise SystemExit(name + ' still contains the failed vector SVG card')
+              if live not in text:
+                  raise SystemExit(name + ' is missing the live gate URL')
+              p.write_text(text)
           PY
-        env:
-          EGG_DATA: ${{ env.EGG_DATA }}
 
-      - name: Commit embedded README egg screen
+      - name: Commit live card into profile README
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add assets/dragon-egg-window.svg README.md README.lt.md
+          git add assets/aurora-dragon-egg-entry-card.png README.md README.lt.md
           if git diff --cached --quiet; then
-            echo "README egg screen already embedded."
+            echo "Profile README already contains live Dragon Egg card."
           else
-            git commit -m "Embed real Dragon Egg inside README TV screen"
+            git commit -m "Replace profile README vector card with live Dragon Egg gate card"
             git push
           fi
