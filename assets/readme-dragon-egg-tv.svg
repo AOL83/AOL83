@@ -11,7 +11,7 @@
     </linearGradient>
   </defs>
   <rect width="100%" height="100%" fill="#03050c"/>
-  <image href="readme-real-dragon-egg.jpg" x="0" y="0" width="620" height="1215" preserveAspectRatio="xMidYMid meet"/>
+  <image href="https://raw.githubusercontent.com/AOL83/AOL83/main/assets/readme-real-dragon-egg.jpg" x="0" y="0" width="620" height="1215" preserveAspectRatio="xMidYMid meet"/>
   <rect x="46" y="455" width="528" height="14" rx="7" fill="url(#scan)" filter="url(#glow)">
     <animate attributeName="y" values="455;760;455" dur="3.4s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.25;0.9;0.25" dur="3.4s" repeatCount="indefinite"/>
