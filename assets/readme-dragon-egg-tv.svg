@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="1490" viewBox="0 0 620 1215" role="img" aria-label="Aurora Dragon Egg animated gateway television card">
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="scan" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#00f5ff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00f5ff" stop-opacity="0.78"/>
+      <stop offset="1" stop-color="#00f5ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#03050c"/>
+  <image href="readme-real-dragon-egg.jpg" x="0" y="0" width="620" height="1215" preserveAspectRatio="xMidYMid meet"/>
+  <rect x="46" y="455" width="528" height="14" rx="7" fill="url(#scan)" filter="url(#glow)">
+    <animate attributeName="y" values="455;760;455" dur="3.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.25;0.9;0.25" dur="3.4s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="40" y="405" width="540" height="540" rx="30" fill="none" stroke="#00f5ff" stroke-opacity="0.18" stroke-width="3">
+    <animate attributeName="stroke-opacity" values="0.18;0.7;0.18" dur="2.8s" repeatCount="indefinite"/>
+  </rect>
+</svg>
