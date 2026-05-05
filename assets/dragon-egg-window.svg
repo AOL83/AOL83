@@ -6,11 +6,12 @@
     <radialGradient id="screenGlow" cx="50%" cy="50%" r="60%"><stop stop-color="#00f5ff" stop-opacity=".22"/><stop offset=".55" stop-color="#ff2bd6" stop-opacity=".08"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
     <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <clipPath id="tv"><path d="M130 420H870L925 475V850L870 905H205L75 775V475L130 420Z"/></clipPath>
+    <clipPath id="eggClip"><ellipse cx="500" cy="660" rx="245" ry="285"/></clipPath>
     <style>
       .small{font-family:Arial,Helvetica,sans-serif;font-weight:900;letter-spacing:4px;fill:#dffbff}
       .side{font-family:Arial,Helvetica,sans-serif;font-size:18px;letter-spacing:5px;fill:#dffbff}
       .button{font-family:Arial,Helvetica,sans-serif;font-size:26px;font-weight:900;letter-spacing:3px;fill:#f4fbff}
-      .ring{transform-origin:center;transform-box:fill-box;animation:pulse 3s ease-in-out infinite}.egg{transform-origin:center;transform-box:fill-box;animation:float 3.2s ease-in-out infinite}.scan{animation:scan 4.4s ease-in-out infinite}@keyframes pulse{0%,100%{opacity:.32;transform:scale(.96)}50%{opacity:.95;transform:scale(1.06)}}@keyframes float{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-12px) scale(1.035)}}@keyframes scan{0%{transform:translateY(-280px);opacity:0}25%{opacity:.45}100%{transform:translateY(300px);opacity:0}}
+      .ring{transform-origin:center;transform-box:fill-box;animation:pulse 3s ease-in-out infinite}.scan{animation:scan 4.4s ease-in-out infinite}@keyframes pulse{0%,100%{opacity:.32;transform:scale(.96)}50%{opacity:.95;transform:scale(1.06)}}@keyframes scan{0%{transform:translateY(-280px);opacity:0}25%{opacity:.45}100%{transform:translateY(300px);opacity:0}}
     </style>
   </defs>
   <rect width="1000" height="1414" rx="30" fill="url(#bg)"/>
@@ -23,14 +24,19 @@
   <text x="500" y="310" text-anchor="middle" style="font-family:Impact,Arial Black,Arial,sans-serif;font-size:112px;font-weight:900;letter-spacing:2px;fill:url(#title)" filter="url(#glow)">DRAGON EGG</text>
   <text x="500" y="380" text-anchor="middle" style="font-family:Arial,Helvetica,sans-serif;font-weight:900;letter-spacing:12px;fill:#eaff38;font-size:38px">CHARACTER</text>
   <text transform="translate(78 540) rotate(90)" class="side">README // VIRTUAL // EMULATOR</text><text transform="translate(933 540) rotate(90)" class="side">CLICK // EGG // LOAD // ALEH</text>
-  <path d="M130 420H870L925 475V850L870 905H205L75 775V475L130 420Z" fill="rgba(255,255,255,.05)" stroke="url(#frame)" stroke-width="5"/>
+  <path d="M130 420H870L925 475V850L870 905H205L75 775V475L130 420Z" fill="rgba(255,255,255,.025)" stroke="url(#frame)" stroke-width="5"/>
   <g clip-path="url(#tv)">
     <rect x="75" y="420" width="850" height="485" fill="#071018"/>
     <rect x="75" y="420" width="850" height="485" fill="url(#screenGlow)"/>
     <ellipse cx="500" cy="690" rx="300" ry="105" fill="#00f5ff" opacity=".08" filter="url(#glow)"/>
     <ellipse class="ring" cx="500" cy="665" rx="255" ry="255" fill="none" stroke="#00f5ff" stroke-width="3" opacity=".52"/>
     <ellipse class="ring" cx="500" cy="665" rx="205" ry="205" fill="none" stroke="#ff2bd6" stroke-width="3" opacity=".45"/>
-    <g class="egg"><image href="https://raw.githubusercontent.com/AOL83/AOL83/main/assets/readme-real-dragon-egg.jpg?v=2026050502" x="230" y="425" width="540" height="520" preserveAspectRatio="xMidYMid meet"/></g>
+    <g clip-path="url(#eggClip)">
+      <g>
+        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 500 680" to="360 500 680" dur="3.8s" repeatCount="indefinite"/>
+        <image href="https://raw.githubusercontent.com/AOL83/AOL83/main/assets/readme-real-dragon-egg.jpg?v=spin-20260505" x="195" y="405" width="610" height="600" preserveAspectRatio="xMidYMid meet"/>
+      </g>
+    </g>
     <rect class="scan" x="140" y="470" width="720" height="44" fill="#00f5ff" opacity=".18"/>
     <rect x="170" y="705" width="660" height="90" rx="18" fill="rgba(0,0,0,.66)" stroke="#00f5ff" stroke-opacity=".46" stroke-width="2"/>
     <text x="500" y="748" text-anchor="middle" class="button" filter="url(#glow)">CLICK THE EGG</text>
