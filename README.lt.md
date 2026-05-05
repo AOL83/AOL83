@@ -7,24 +7,18 @@
 <br />
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:050510,30:00ff85,65:ffe600,100:ff355e&text=Terence%20Lewis&fontColor=ffffff&fontSize=54&fontAlignY=38&desc=Saugumui%20orientuotas%20sistem%C5%B3%20in%C5%BEinierius%20%E2%80%A2%20Gedimams%20atsparus%20projektavimas%20%E2%80%A2%20Produkcija%20vir%C5%A1%20teorijos%20%E2%80%A2%20T%C4%99stinumas%20vir%C5%A1%20patogumo&descAlignY=58&descSize=20&animation=fadeIn" alt="Terence Lewis lietuviškas cyberpunk profilio baneris" width="100%" />
-</p>
-
-<div align="center">
-  <iframe src="https://raw.githack.com/AOL83/AOL83/main/assets/aurora-dragon-egg-interactive-card.html" width="760" height="1080" frameborder="0" title="Interaktyvi Aurora Dragon Egg kortelė"></iframe>
-</div>
-
-<p align="center">
-  <a href="https://raw.githack.com/AOL83/AOL83/main/assets/aurora-dragon-egg-interactive-card.html"><strong>Atidaryti interaktyvią Aurora Dragon Egg kortelę</strong></a>
+  <strong>Terence Lewis</strong><br>
+  Saugumui orientuotas sistemų inžinierius • Gedimams atsparus projektavimas • Produkcija virš teorijos • Tęstinumas virš patogumo
 </p>
 
 <p align="center">
-  <a href="https://aol83.github.io/auroralogisticalecoholdings/?launch=true"><strong>Atidaryti pilną Aurora Dragon Egg vartų puslapį</strong></a>
+  <a href="./assets/aurora-dragon-egg-interactive-card.html">
+    <img src="./assets/readme-real-dragon-egg.jpg" alt="Aurora Dragon Egg interaktyvi vartų kortelė" width="760" />
+  </a>
 </p>
 
 <p align="center">
-  <a href="https://waterfallslt.substack.com/"><img src="https://img.shields.io/badge/SKAITYTI-WaterFallsLT%20Substack-FF6719?style=for-the-badge&logo=substack&logoColor=white" alt="Skaityti WaterFallsLT Substack" /></a>
-  <a href="https://github.com/AOL83/Code-Strategy-Solutions"><img src="https://img.shields.io/badge/CSS-Code%20Strategy%20Solutions-ff355e?style=for-the-badge&logo=github&logoColor=white" alt="Code Strategy Solutions" /></a>
+  <a href="./assets/aurora-dragon-egg-interactive-card.html"><strong>Atidaryti suverenią Aurora Dragon Egg operacinę HTML kortelę</strong></a>
 </p>
 
 <p align="center"><strong>Saugumui orientuotas sistemų inžinierius • Gedimams atsparus projektavimas • Produkcija virš teorijos • Tęstinumas virš patogumo</strong></p>
@@ -61,19 +55,6 @@ Saugumui orientuota valdymo ir mesh tinklų platforma, skirta būsenų mašinoms
 
 ---
 
-## Susisiekime
-
-<p align="left">
-  <a href="https://github.com/AOL83"><img src="https://img.shields.io/badge/GitHub-AOL83-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub AOL83" /></a>
-  <a href="https://www.instagram.com/WaterFallsLT/"><img src="https://img.shields.io/badge/Instagram-@WaterFallsLT-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram WaterFallsLT" /></a>
-  <a href="https://waterfallslt.substack.com/"><img src="https://img.shields.io/badge/Substack-WaterFallsLT-FF6719?style=for-the-badge&logo=substack&logoColor=white" alt="Substack WaterFallsLT" /></a>
-  <a href="https://aol83.github.io/auroralogisticalecoholdings/"><img src="https://img.shields.io/badge/Aurora%20svetainė-Gyva%20svetainė-00ff85?style=for-the-badge&logo=githubpages&logoColor=050510" alt="Aurora svetainė" /></a>
-</p>
-
----
-
 ## Darbo stilius
 
 Saugumas pirmoje vietoje • Gedimams atsparus projektavimas • Sistemos vietoje trumpų sprendimų • Tęstinumas vietoje patogumo • Kuriu stresui, ne demonstracijoms • Stebimos sistemos vietoje tylių gedimų.
-
-<p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:050510,30:00ff85,65:ffe600,100:ff355e" alt="Footer wave" /></p>
