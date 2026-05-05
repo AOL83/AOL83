@@ -16,15 +16,15 @@
 </p>
 
 <!-- CYBERPUNK WINDOWED ENTRY POINT -->
-<p align="center">
-  <a href="https://aol83.github.io/auroralogisticalecoholdings/?launch=true">
-    <img
-      src="./assets/dragon-egg-window.svg"
-      alt="Aurora Logistical Eco Holdings cyberpunk README entry window"
-      width="760"
-    />
-  </a>
-</p>
+<div align="center">
+  <iframe
+    src="./assets/aurora-dragon-egg-interactive-card.html"
+    width="760"
+    height="1080"
+    frameborder="0"
+    title="Active Aurora Dragon Egg 3D entry card"
+  ></iframe>
+</div>
 
 <!-- PRIMARY LAUNCH BUTTONS -->
 <p align="center">
