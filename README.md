@@ -16,15 +16,28 @@
 </p>
 
 <!-- CYBERPUNK WINDOWED ENTRY POINT -->
-<div align="center">
-  <iframe
-    src="./assets/aurora-dragon-egg-interactive-card.html"
-    width="760"
-    height="1080"
-    frameborder="0"
-    title="Active Aurora Dragon Egg 3D entry card"
-  ></iframe>
-</div>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aurora Dragon Egg Entry Card</title>
+<script type="module" src="./vendor/model-viewer.min.js"></script>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#03050c;color:#f5fbff;font-family:Arial,Helvetica,sans-serif}body{display:grid;place-items:center;padding:18px}.card{width:min(760px,100%);aspect-ratio:1000/1414;position:relative;overflow:hidden;border-radius:34px;background:radial-gradient(circle at 50% 45%,rgba(0,245,255,.18),transparent 38%),linear-gradient(160deg,#050510,#080615 44%,#030812);box-shadow:0 0 34px rgba(0,245,255,.22),inset 0 0 0 2px rgba(255,255,255,.14)}.card:before{content:"";position:absolute;inset:0;border-radius:28px;padding:7px;background:linear-gradient(135deg,#ff305f,#ff2bd6,#eaff38,#00f5ff,#7cff00);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}.year{position:absolute;top:52px;font-weight:900;letter-spacing:6px;color:#ff305f;font-size:30px}.left{left:46px}.right{right:46px}.badge{position:absolute;top:38px;left:50%;transform:translateX(-50%);width:54%;min-height:92px;border-radius:90px;border:3px solid rgba(234,255,56,.35);display:grid;place-items:center;text-align:center;background:rgba(6,8,16,.82)}.badge b{display:block;color:#eaff38;font-size:58px;letter-spacing:7px;line-height:.95}.badge span{display:block;font-size:22px;letter-spacing:5px;margin-top:9px;font-weight:800}.title{position:absolute;left:7%;right:7%;top:198px;text-align:center;font-family:Impact,Arial Black,Arial,sans-serif;font-weight:900;line-height:.88;font-size:126px;letter-spacing:2px;background:linear-gradient(90deg,#ff164f,#ff2bd6,#8b5cff,#208cff);-webkit-background-clip:text;background-clip:text;color:transparent}.subtitle{position:absolute;left:0;right:0;top:382px;text-align:center;color:#eaff38;letter-spacing:14px;font-size:42px;font-weight:900}.screen{position:absolute;left:7%;right:7%;top:522px;height:47%;border-radius:42px;border:3px solid rgba(0,245,255,.55);background:radial-gradient(circle at 50% 55%,rgba(0,245,255,.12),rgba(29,52,44,.72) 55%,rgba(8,17,25,.9));overflow:hidden}model-viewer{width:100%;height:100%;--poster-color:transparent;background:transparent}.band{position:absolute;left:18%;right:18%;bottom:36%;min-height:64px;border:2px solid rgba(0,245,255,.55);border-radius:14px;background:rgba(0,0,0,.68);display:grid;place-items:center;text-align:center;pointer-events:none}.band strong{display:block;letter-spacing:3px;font-size:28px}.band span{display:block;letter-spacing:4px;font-size:12px;margin-top:6px}.coming{position:absolute;left:7%;right:7%;bottom:152px;text-align:center;font-weight:950;font-size:68px;letter-spacing:4px;line-height:1.15}.open{position:absolute;left:13%;right:13%;bottom:50px;height:74px;border:4px solid #ff2bd6;display:flex;align-items:center;justify-content:space-between;padding:0 32px;background:rgba(8,8,14,.78)}.open span{font-size:26px;font-weight:900;letter-spacing:3px}.btn{border:3px solid #ff2bd6;border-radius:10px;padding:14px 26px;font-weight:900;letter-spacing:2px}.gate{position:absolute;inset:0;z-index:5;color:transparent;text-decoration:none}
+</style>
+</head>
+<body>
+<main class="card" aria-label="Aurora Dragon Egg Entry Gate">
+<a class="gate" href="./aurora-dragon-egg-interactive-card.html" aria-label="Open Aurora Dragon Egg operating shell"></a>
+<div class="year left">2026</div><div class="year right">2026</div>
+<div class="badge"><div><b>TERENCE OS</b><span>OPERATING SYSTEMS</span></div></div>
+<div class="title">DRAGON<br>EGG</div><div class="subtitle">Character</div>
+<section class="screen"><model-viewer src="./dragon-egg.glb" camera-controls auto-rotate rotation-per-second="28deg" interaction-prompt="none" shadow-intensity="1" exposure="1.05" camera-orbit="0deg 76deg 2.7m" field-of-view="30deg" alt="3D animated Dragon Egg"></model-viewer><div class="band"><div><strong>CLICK THE EGG</strong><span>LOAD AURORA LOGISTICAL ECO HOLDINGS GATE</span></div></div></section>
+<div class="coming">COMING SOON TO<br>BLOCKCHAIN</div><div class="open"><span>ALEH GATE</span><div class="btn">OPEN</div></div>
+</main>
+</body>
+</html>
 
 <!-- PRIMARY LAUNCH BUTTONS -->
 <p align="center">
