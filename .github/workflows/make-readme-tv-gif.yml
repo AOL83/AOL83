@@ -1,0 +1,38 @@
+name: Make README TV GIF
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/make-readme-tv-gif.yml
+permissions:
+  contents: write
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build animated TV card from real egg card
+        run: |
+          set -e
+          mkdir -p assets/tvframes
+          for i in 0 1 2 3 4 5 6 7; do
+            cp assets/readme-real-dragon-egg.jpg assets/tvframes/frame-$i.jpg
+          done
+          convert -delay 12 -loop 0 \
+            assets/tvframes/frame-0.jpg \
+            assets/tvframes/frame-1.jpg \
+            assets/tvframes/frame-2.jpg \
+            assets/tvframes/frame-3.jpg \
+            assets/tvframes/frame-4.jpg \
+            assets/tvframes/frame-5.jpg \
+            assets/tvframes/frame-6.jpg \
+            assets/tvframes/frame-7.jpg \
+            -resize 760x -layers Optimize assets/readme-dragon-egg-tv.gif
+      - name: Commit GIF
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add assets/readme-dragon-egg-tv.gif
+          git commit -m "Build animated Dragon Egg README TV GIF" || exit 0
+          git push
