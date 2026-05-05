@@ -17,28 +17,75 @@ jobs:
       - name: Checkout profile repository
         uses: actions/checkout@v4
 
-      - name: Replace README card cache reference
+      - name: Restore original README card and embed real egg inside TV screen
         run: |
+          set -euo pipefail
+
+          ORIGINAL_CARD_URL="https://raw.githubusercontent.com/AOL83/AOL83/db00bbb28f8b7ba6d292d89a68963811bd66ad50/assets/dragon-egg-window.svg"
+          curl -L "$ORIGINAL_CARD_URL" -o assets/dragon-egg-window.svg
+
+          if [ -f assets/readme-real-dragon-egg.jpg ]; then
+            EGG_FILE="assets/readme-real-dragon-egg.jpg"
+            MIME="image/jpeg"
+          elif [ -f assets/real-dragon-egg.jpg ]; then
+            EGG_FILE="assets/real-dragon-egg.jpg"
+            MIME="image/jpeg"
+          elif [ -f assets/meshy-dragon-egg.png ]; then
+            EGG_FILE="assets/meshy-dragon-egg.png"
+            MIME="image/png"
+          else
+            echo "No real egg preview image found in assets."
+            exit 1
+          fi
+
+          EGG_DATA="data:${MIME};base64,$(base64 -w 0 "$EGG_FILE")"
+
           python3 - <<'PY'
           from pathlib import Path
-          version = 'dragon-egg-real-screen-20260505'
+          import os
+
+          svg_path = Path('assets/dragon-egg-window.svg')
+          text = svg_path.read_text()
+          egg_data = os.environ['EGG_DATA']
+
+          start = text.find('<image')
+          if start == -1:
+              raise SystemExit('No image element found in SVG card')
+          end = text.find('/>', start)
+          if end == -1:
+              raise SystemExit('Image element did not close with />')
+
+          replacement = f'''<image
+        href="{egg_data}"
+        x="255"
+        y="420"
+        width="490"
+        height="430"
+        preserveAspectRatio="xMidYMid meet"
+        opacity="0.98"
+      />'''
+          text = text[:start] + replacement + text[end + 2:]
+          svg_path.write_text(text)
+
+          version = 'embedded-real-dragon-egg-20260505'
           for file_name in ('README.md', 'README.lt.md'):
               path = Path(file_name)
-              text = path.read_text()
-              text = text.replace('./assets/dragon-egg-window.svg?v=real-dragon-egg-20260505', './assets/dragon-egg-window.svg')
-              text = text.replace('./assets/dragon-egg-window.svg?v=dragon-egg-real-screen-20260505', './assets/dragon-egg-window.svg')
-              text = text.replace('./assets/dragon-egg-window.svg', f'./assets/dragon-egg-window.svg?v={version}')
-              path.write_text(text)
+              md = path.read_text()
+              import re
+              md = re.sub(r'\.\/assets\/dragon-egg-window\.svg(?:\?v=[^"\s]+)?', f'./assets/dragon-egg-window.svg?v={version}', md)
+              path.write_text(md)
           PY
+        env:
+          EGG_DATA: ${{ env.EGG_DATA }}
 
-      - name: Commit README card refresh
+      - name: Commit embedded README egg screen
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add README.md README.lt.md
+          git add assets/dragon-egg-window.svg README.md README.lt.md
           if git diff --cached --quiet; then
-            echo "README card references already refreshed."
+            echo "README egg screen already embedded."
           else
-            git commit -m "Refresh README Dragon Egg card references"
+            git commit -m "Embed real Dragon Egg inside README TV screen"
             git push
           fi
