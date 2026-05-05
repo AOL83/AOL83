@@ -17,17 +17,13 @@
 
 <!-- CYBERPUNK WINDOWED ENTRY POINT -->
 <p align="center">
-  <a href="./assets/aurora-dragon-egg-interactive-card.html">
+  <a href="./index.html">
     <img
-      src="./assets/readme-real-dragon-egg.jpg"
-      alt="Aurora Dragon Egg active 3D entry card"
+      src="./assets/readme-dragon-egg-tv.svg"
+      alt="Aurora Dragon Egg animated gateway television card"
       width="760"
     />
   </a>
-</p>
-
-<p align="center">
-  <a href="./assets/aurora-dragon-egg-interactive-card.html"><strong>Open the active Aurora Dragon Egg card</strong></a>
 </p>
 
 <!-- PRIMARY LAUNCH BUTTONS -->
