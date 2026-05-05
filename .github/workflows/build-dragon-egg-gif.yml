@@ -1,0 +1,62 @@
+name: Build Dragon Egg GIF
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - ".github/workflows/build-dragon-egg-gif.yml"
+      - "assets/readme-real-dragon-egg.jpg"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-gif:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repo
+        uses: actions/checkout@v4
+
+      - name: Install image tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+
+      - name: Build spinning Dragon Egg GIF from existing egg image
+        run: |
+          set -euo pipefail
+          mkdir -p assets/gif-frames
+          SRC="assets/readme-real-dragon-egg.jpg"
+          test -s "$SRC"
+
+          for i in $(seq 0 23); do
+            angle=$(( i * 15 ))
+            frame=$(printf "assets/gif-frames/frame_%03d.png" "$i")
+            convert "$SRC" \
+              -resize 560x560 \
+              -background none \
+              -virtual-pixel transparent \
+              -distort SRT "$angle" \
+              -gravity center \
+              -extent 620x620 \
+              "$frame"
+          done
+
+          convert -delay 6 -loop 0 assets/gif-frames/frame_*.png \
+            -layers Optimize \
+            assets/dragon-egg-spin.gif
+
+          identify assets/dragon-egg-spin.gif
+
+      - name: Commit Dragon Egg GIF
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add assets/dragon-egg-spin.gif
+          if git diff --cached --quiet; then
+            echo "Dragon Egg GIF already up to date."
+          else
+            git commit -m "Build spinning Dragon Egg GIF asset"
+            git push
+          fi
