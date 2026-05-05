@@ -19,8 +19,8 @@
 <p align="center">
   <a href="./index.html">
     <img
-      src="./assets/readme-real-dragon-egg.jpg"
-      alt="Aurora Dragon Egg gateway television card"
+      src="./assets/dragon-egg-window.svg?v=spin-20260505"
+      alt="Aurora Dragon Egg gateway television card with spinning egg"
       width="760"
     />
   </a>
